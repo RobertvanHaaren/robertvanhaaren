@@ -1,0 +1,10 @@
+.list--inline {
+	li {
+		display: inline-block;
+		margin-right: $spacing-m;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
