@@ -19,4 +19,10 @@
 		color: $color-white;
 		text-decoration: none;
 	}
+
+	u {
+		text-decoration: none;
+    	border-bottom: solid 2px $color-accent;
+    	padding-bottom: 0em;
+	}
 }
