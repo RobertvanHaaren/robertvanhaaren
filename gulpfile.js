@@ -75,7 +75,7 @@ gulp.task('sass', function () {
         .pipe(connect.reload());
 });
 
-gulp.task('browserify', () => {
+gulp.task('browserify', function(){
 	browserify(paths.js.src)
 	  .transform('babelify', { presets: ["es2015"] })
 	  .bundle()

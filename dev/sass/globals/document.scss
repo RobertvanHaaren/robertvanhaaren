@@ -15,3 +15,33 @@ body {
 	width: 90%;
 	margin: 0 auto;
 }
+
+.feature {
+	overflow: hidden;
+	padding: $spacing-xxl 0;
+
+	&__device {
+		max-width: 55%;
+		padding-right: $spacing-xl;
+		
+		float: left;
+		line-height: 0;
+
+		margin-left: -3em;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		overflow: hidden;
+		position: relative;
+		top: 6em;
+	}
+
+	&__sub-title {
+		margin-bottom: $spacing-m;
+	}
+
+}
