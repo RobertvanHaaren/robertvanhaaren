@@ -1,6 +1,7 @@
 .feature {
 	overflow: hidden;
 	margin-bottom: $spacing-xxl;
+	padding-top: $spacing-xxl;
 
 	&__device {
 		width: 50%;
@@ -25,12 +26,13 @@
 	}
 
 	&.feature--iphone {
+		padding-top: 0;
 		.feature__device {
-			width: 550px;
+			width: 500px;
 			margin-left: -3em;
 		}
 		.feature__content {
-			top: 6em;
+			top: 10em;
 		}
 	}
 	
@@ -42,6 +44,8 @@
 	}
 
 	&.feature--ipad {
+		margin-bottom: 0;
+		
 		.feature__device {
 			width: 700px;
 			margin-left: -14.5em;
