@@ -33,9 +33,19 @@
 
 			&:first-child {
 				padding-right: $spacing-m;
+
+				@include screen-xs-max {
+					margin-bottom: $spacing-xl;
+				}
 			}
 			&:last-child {
 				padding-left: $spacing-m;
+			}
+
+			@include screen-xs-max {
+				width: 100%;
+				float: none;
+				padding: 0 !important;
 			}
 		}
 	}

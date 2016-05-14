@@ -3,14 +3,14 @@
 	color: $color-white;
 
 	background-color: $color-base;
-	margin-bottom: $spacing-xxl;
 
 	overflow: hidden;
 	position: relative;
 
-	@include screen-xs-max {
-		margin-bottom: $spacing-xl;
-	}
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 
 	&__btn {
 		color: $color-white;
