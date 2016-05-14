@@ -90,7 +90,5 @@ gulp.task('browserify', function(){
       .pipe(connect.reload());
 });
 
-gulp.task('js', ['browsify']);
-
 gulp.task('default', ['connect', 'watch']);
-gulp.task('build', ['ejs', 'sass', 'js']);
+gulp.task('build', ['ejs', 'sass', 'browserify']);
