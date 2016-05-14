@@ -1,0 +1,29 @@
+.story {
+	margin-top: $spacing-xxl;
+
+	img, p,
+	blockquote,
+	&__banner {
+		margin-bottom: $spacing-xxl;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	&__banner {
+		padding: $spacing-xxl 0;
+
+		color: $color-white;
+		background-color: $color-base;
+
+		blockquote {
+			margin-bottom: 0;
+		}
+
+		a {
+			border-color: $color-accent;
+			color: $color-white;
+		}
+	}
+}

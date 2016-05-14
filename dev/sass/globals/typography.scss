@@ -12,14 +12,14 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 h1 {
-	font-size: 3.25em;
+	font-size: 4em;
 	font-weight: $weight-primary-bold;
 }
 h2 {
-	font-size: 2.75em;
+	font-size: 3.25em;
 }
 h3 {
-	font-size: 2.25em;
+	font-size: 2.75em;
 }
 h4 {
 	font-size: 2.12em;
@@ -33,8 +33,46 @@ h6 {
 
 a {
 	color: $color-base;
+	text-decoration: none;
+	border-bottom: solid 1px $color-base;
 }
 
 p {
 	margin-bottom: $spacing-m;
+
+	&.p--big {
+		font-size: 1.5em;
+		line-height: $line-height-l;
+	}
+}
+
+blockquote {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+	div {
+		font-size: 2.75em;
+		font-style: italic;
+
+		line-height: $line-height-s;
+		margin-bottom: $spacing-s;
+
+		&:before {
+			content: '“';
+		}
+
+		&:after {
+			content: '”';
+		}
+	}	
+
+	cite {
+		font-size: $size-m;
+		padding-top: $spacing-l;
+
+		&:before {
+			content: '- ';
+		}
+	}
 }
