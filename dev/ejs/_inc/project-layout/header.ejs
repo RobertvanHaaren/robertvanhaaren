@@ -1,0 +1,19 @@
+<%- partial('../layout/header', {
+		meta: {
+			title: title,
+			description: description,
+			img: img,
+			url: 'http://robertvanhaaren.github.io/projects/'+slug
+		}
+	}) %>
+
+<header class="header-banner">
+	<div class="container text-center">
+		<a href="/" class="header-banner__btn btn">
+			Back to overview
+		</a>
+		<div class="header-banner__logo">
+			<%- partial('../logo') %>
+		</div>
+	</div>
+</header>

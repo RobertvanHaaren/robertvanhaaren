@@ -19,25 +19,3 @@ body {
 		max-width: 800px;
 	}
 }
-
-.page {
-	width: 100%;
-	background-color: white;
-	@include transition(transform);
-}
-
-.page.page--project {
-	position: fixed;
-	transform: translateX(100%);
-}
-
-body.page-project-open {
-	.page.page--overview {
-		position: fixed;
-		transform: translateX(-100%);
-	}
-	.page.page--project {
-		position: relative;
-		transform: translateX(0);
-	}
-}
