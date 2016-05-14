@@ -4,8 +4,8 @@ npm install
 gulp
 ```
 
-* [] Overview Page Responsive
-* [] Project Page Responsive
-* [] Favicon
-* [] Overview Animations
-* [] Projects Copy
+* [ ] Overview Page Responsive
+* [ ] Project Page Responsive
+* [ ] Favicon
+* [ ] Overview Animations
+* [ ] Projects Copy
