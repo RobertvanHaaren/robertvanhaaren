@@ -3,12 +3,37 @@
 
 	img, p,
 	blockquote,
-	&__banner {
+	&__banner,
+	&__img-group {
 		margin-bottom: $spacing-xxl;
 	}
 
 	img {
 		width: 100%;
+	}
+
+	&__img-group {
+		overflow: hidden;
+
+		&__img {
+			width: 50%;
+			height: 100%;
+
+			overflow: hidden;
+			float: left;
+
+			img {
+				width: 100%;
+				margin-bottom: 0;
+			}
+
+			&:first-child {
+				padding-right: $spacing-m;
+			}
+			&:last-child {
+				padding-left: $spacing-m;
+			}
+		}
 	}
 
 	&__banner {
