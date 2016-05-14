@@ -5,7 +5,7 @@ const gulp = require('gulp'),
       autoprefixer = require('gulp-autoprefixer'),
       rename = require('gulp-rename'),
       gutil = require('gulp-util'),
-      browserify = require('gulp-browserify'),
+      browserify = require('browserify'),
       htmlmin = require('gulp-htmlmin'),
       uglify = require('gulp-uglify'),
       source = require('vinyl-source-stream'),
@@ -48,7 +48,7 @@ gulp.task('connect', function(){
 
 gulp.task('watch', function(){
     gulp.watch(paths.ejs.all, ['ejs']);
-    gulp.watch(paths.js.srcAll, ['browsify']);
+    gulp.watch(paths.js.srcAll, ['browserify']);
     gulp.watch(paths.sass.all, ['sass']);
 });
 

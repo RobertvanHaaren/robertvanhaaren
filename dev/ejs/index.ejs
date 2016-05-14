@@ -1,8 +1,10 @@
 <%- layout('_inc/layout') %>
 
+<section class="page page--project">
+
 <header class="header-banner">
 	<div class="container text-center">
-		<a href="/" class="header-banner__btn btn">
+		<a href="/" data-project-close class="header-banner__btn btn">
 			Back to overview
 		</a>
 		<div class="header-banner__logo">
@@ -54,6 +56,10 @@
 </div>
 
 <%- partial('_inc/mastfoot') %>
+
+</section>
+
+<section class="page page--overview">
 
 <section class="hero">
 	<div class="hero__wrapper">
@@ -118,3 +124,5 @@
 	}) %>
 
 <%- partial('_inc/mastfoot') %>
+
+</section>
