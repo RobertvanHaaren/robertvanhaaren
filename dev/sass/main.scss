@@ -3,9 +3,14 @@
 
 @import "globals/document";
 @import "globals/typography";
+@import "globals/globals";
 
 @import "globals/components/lists";
+@import "globals/components/buttons";
 
 @import "globals/partials/hero";
 @import "globals/partials/feature";
 @import "globals/partials/story";
+@import "globals/partials/header-banner";
+@import "globals/partials/mastfoot";
+@import "globals/partials/logo";

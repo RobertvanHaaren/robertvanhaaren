@@ -34,7 +34,7 @@ h6 {
 a {
 	color: $color-base;
 	text-decoration: none;
-	border-bottom: solid 1px $color-base;
+	border-bottom: $border-style 1px $color-base;
 }
 
 p {
@@ -44,6 +44,12 @@ p {
 		font-size: 1.5em;
 		line-height: $line-height-l;
 	}
+}
+
+u {
+	text-decoration: none;
+	border-bottom: $border-style 5px $color-accent;
+	display: inline-block;
 }
 
 blockquote {

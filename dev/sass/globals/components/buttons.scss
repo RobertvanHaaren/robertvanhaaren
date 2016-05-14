@@ -1,0 +1,28 @@
+.btn {
+	height: 40px;
+	display: inline-block;
+
+	color: $color-base;
+	border: $border-style $border-width;
+	
+	padding: 0 $spacing-m;
+	line-height: 33px;
+
+	overflow: hidden;
+
+	position: relative;
+	z-index: 1;
+
+	opacity: 1;
+	@include transition(opacity);
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.btn.btn--big {
+	font-size: $size-m;
+	height: 50px;
+	line-height: 45px;
+}

@@ -1,0 +1,29 @@
+.header-banner {
+	padding: $spacing-m 0;
+	color: $color-white;
+
+	background-color: $color-base;
+	margin-bottom: $spacing-xxl;
+
+	overflow: hidden;
+	position: relative;
+
+	&__btn {
+		color: $color-white;
+		float: left;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		padding: $spacing-m 0;
+
+		.logo {
+			color: $color-accent;
+		}
+	}
+}
