@@ -40,6 +40,20 @@
 		}
 	}
 
+	&.feature--iphone-vertical {
+		.feature__device {
+			width: 550px;
+			margin-right: -3em;
+
+			img {
+				float: right;
+				margin-right: 100px;
+			    max-height: 650px;
+				width: auto;
+			} 
+		}
+	}
+
 	&.feature--reversed {
 		.feature__device {
 			float: right;
