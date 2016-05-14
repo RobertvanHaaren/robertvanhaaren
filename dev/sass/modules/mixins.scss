@@ -37,3 +37,9 @@
 @mixin main-font {
     font: $weight-primary $size-m $family-primary;
 }
+
+@mixin screen-xs-max {
+    @include media($max-width: map-get($screen-xs, 'breakpoint')){
+        @content;
+    }
+}

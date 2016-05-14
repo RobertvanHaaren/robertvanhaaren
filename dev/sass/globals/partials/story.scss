@@ -6,6 +6,10 @@
 	&__banner,
 	&__img-group {
 		margin-bottom: $spacing-xxl;
+
+		@include screen-xs-max {
+			margin-bottom: $spacing-xl;
+		}
 	}
 
 	img {

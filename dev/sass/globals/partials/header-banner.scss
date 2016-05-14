@@ -8,6 +8,10 @@
 	overflow: hidden;
 	position: relative;
 
+	@include screen-xs-max {
+		margin-bottom: $spacing-xl;
+	}
+
 	&__btn {
 		color: $color-white;
 		float: left;
@@ -24,6 +28,11 @@
 
 		.logo {
 			color: $color-accent;
+
+			@include screen-xs-max {
+				float: right;
+				margin-right: 5%;
+			}
 		}
 	}
 }
