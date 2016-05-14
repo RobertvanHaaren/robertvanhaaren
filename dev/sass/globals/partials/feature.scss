@@ -33,10 +33,23 @@
 			top: 6em;
 		}
 	}
+	
 	&.feature--laptop {
 		.feature__device {
 			width: 800px;
 			margin-right: -12.5em;
+		}
+	}
+
+	&.feature--ipad {
+		.feature__device {
+			width: 700px;
+			margin-left: -14.5em;
+		}
+
+		.feature__content {
+			top: 2em;
+			left: 4em;
 		}
 	}
 
