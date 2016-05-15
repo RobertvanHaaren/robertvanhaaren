@@ -1,0 +1,11 @@
+%el-faded {
+	opacity: 0;
+	transform: translateY(-$spacing-m);
+
+	@include transition((opacity, transform), $transition-duration-l);
+}
+
+%el-faded--visible {
+	opacity: 1;
+	transform: translateY(0);
+}

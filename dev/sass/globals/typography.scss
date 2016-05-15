@@ -60,6 +60,16 @@ u {
 	display: inline-block;
 }
 
+img {
+	&.img--faded {
+		@extend %el-faded;
+
+		&.img--faded--visible {
+			@extend %el-faded--visible;
+		}
+	}
+}
+
 blockquote {
 	width: 100%;
 	max-width: 800px;
@@ -89,6 +99,16 @@ blockquote {
 
 		&:before {
 			content: '- ';
+		}
+	}
+
+	&.blockquote--faded {
+		@extend %el-faded;
+		transform: translateX(-$spacing-m);
+
+		&.blockquote--faded--visible {
+			@extend %el-faded--visible;
+			transform: translateX(0);
 		}
 	}
 }

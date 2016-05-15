@@ -9,21 +9,25 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 exports.default = {
 	init: function init() {
+		var _this = this;
+
 		var els = this._els = document.querySelectorAll('[data-onscreen-toggle]');
 
 		if (els.length > 0) {
 			this._checkEls = this._checkEls.bind(this);
 
-			this._checkEls();
-			document.addEventListener('scroll', this._checkEls, false);
+			window.addEventListener('load', function () {
+				_this._checkEls();
+				document.addEventListener('scroll', _this._checkEls, false);
+			}, false);
 		}
 	},
 	_checkEls: function _checkEls() {
-		var _this = this;
+		var _this2 = this;
 
 		[].concat(_toConsumableArray(this._els)).forEach(function (el) {
 			//check if element is on screen
-			var onScreen = _this._isOnScreen(el);
+			var onScreen = _this2._isOnScreen(el);
 
 			if (onScreen) {
 				//if element is on screen
@@ -38,7 +42,7 @@ exports.default = {
 
 		//adds an extra offset so the class isn't added
 		//untill its completely in the viewport
-		var extraOffset = el.offsetHeight - el.offsetHeight / 4;
+		var extraOffset = el.offsetHeight - el.offsetHeight / 1.5;
 
 		var viewport = {
 			top: win.scrollY,
