@@ -92,11 +92,21 @@
 		.feature__device {
 			width: 700px;
 			margin-left: -14.5em;
+
+			opacity: 0;
+			transform: rotate(-10deg) translateX(-100px);
+			transform-origin: 0 100%;
+			@include transition((opacity, transform), $transition-duration-l);
 		}
 
 		.feature__content {
 			top: 2em;
 			left: 4em;
+		}
+
+		&.feature--onscreen .feature__device {
+			transform: rotate(0) translateX(0);
+			opacity: 1;
 		}
 	}
 

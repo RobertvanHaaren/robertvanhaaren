@@ -30,7 +30,7 @@ export default {
 
 	    //adds an extra offset so the class isn't added
 		//untill its completely in the viewport
-	    const extraOffset = el.offsetHeight;
+	    const extraOffset = el.offsetHeight - (el.offsetHeight / 4);
 
 	    const viewport = {
 	        top: win.scrollY,
