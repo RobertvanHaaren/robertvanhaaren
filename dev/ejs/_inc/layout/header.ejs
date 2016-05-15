@@ -1,9 +1,10 @@
 <%
-    var rootPath = '/www/';
+    var rootPath = '/www/',
+        pageTitleBase = 'Robert van Haaren - Interaction Designer';
 
     var appDesc = meta.description || 'An ambitious interaction designer based in Amsterdam',
         appUrl = meta.url || 'http://robertvanhaaren.com',
-        appName = meta.title ? meta.title+' | Robert van Haaren' : 'Robert van Haaren',
+        appName = meta.title ? meta.title+' | '+pageTitleBase : pageTitleBase,
         imgUrl = meta.img || appUrl+rootPath+'img/robertvanhaaren-og.png';
 %>
 
