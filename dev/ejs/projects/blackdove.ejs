@@ -1,4 +1,4 @@
-<%- partial('../_inc/project-layout/header', {
+<%- partial('../_inc/project/layout/header', {
 		title: 'Blackdove',
 		description: 'Netflix for Motion art',
 		img: 'http://focuslabllc.com/assets/portfolio/500px/500px_Artboard@2x.jpg',
@@ -14,31 +14,32 @@
 
 <div class="story">
 	<div class="container">
-		<img src="http://focuslabllc.com/assets/portfolio/500px/500px_Artboard@2x.jpg" alt="" />
+		<%- partial('../_inc/project/img', {
+				src: 'http://focuslabllc.com/assets/portfolio/500px/500px_Artboard@2x.jpg',
+				alt: ''
+			}) %>
 	</div>
 
-	<div class="story__banner">
-		<div class="container">
-			<blockquote>
-				<div>
-					We aimed to address accurate communication of the company name, brand repositioning, and the merger of two unique brand experiences.
-				</div>
-				<cite>Marc Billings, CEO @ <a>Blackdove</a></cite>
-			</blockquote>
-		</div>
-	</div>
+	<%- partial('../_inc/project/quote-banner', {
+			quote: 'We aimed to address accurate communication of the company name, brand repositioning, and the merger of two unique brand experiences.',
+			cite: 'Marc Billings, CEO @ <a>Blackdove</a>'
+		}) %>
 
 	<div class="container">
-		<div class="story__img-group">
-			<div class="story__img-group__img">
-				<img src="http://focuslabllc.com/assets/portfolio/500px/500px_Bill@2x.jpg" alt="">
-			</div>
-			<div class="story__img-group__img">
-				<img src="http://focuslabllc.com/assets/portfolio/500px/500px_Sketch@2x.jpg" alt="">
-			</div>
-		</div>
-		<img src="http://focuslabllc.com/assets/portfolio/500px/500px_Rocks@2x.jpg" alt="">
+		<%- partial('../_inc/project/img-group', {
+			imgs: [{
+				src: 'http://focuslabllc.com/assets/portfolio/500px/500px_Sketch@2x.jpg',
+				alt: ''
+			}, {
+				src: 'http://focuslabllc.com/assets/portfolio/500px/500px_Bill@2x.jpg',
+				alt: ''
+			}]
+		}) %>
+		<%- partial('../_inc/project/img', {
+			src: 'http://focuslabllc.com/assets/portfolio/500px/500px_Rocks@2x.jpg',
+			alt: ''
+		}) %>
 	</div>
 </div>
 
-<%- partial('../_inc/project-layout/footer') %>
+<%- partial('../_inc/project/layout/footer') %>

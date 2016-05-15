@@ -6,8 +6,10 @@ export default {
 		if(els.length > 0){
 			this._checkEls = this._checkEls.bind(this);
 
-			this._checkEls();
-			document.addEventListener('scroll', this._checkEls, false);
+			window.addEventListener('load', () => {
+				this._checkEls();
+				document.addEventListener('scroll', this._checkEls, false);
+			}, false);
 		}
 	},
 
@@ -30,7 +32,7 @@ export default {
 
 	    //adds an extra offset so the class isn't added
 		//untill its completely in the viewport
-	    const extraOffset = el.offsetHeight - (el.offsetHeight / 4);
+	    const extraOffset = el.offsetHeight - (el.offsetHeight / 1.5);
 
 	    const viewport = {
 	        top: win.scrollY,

@@ -1,0 +1,10 @@
+<div class="story__img-group">
+	<% for(var i = 0; i < imgs.length; i++){ %>
+		<div class="story__img-group__img">
+			<%- partial('img', {
+				src: imgs[i].src,
+				alt: imgs[i].alt
+			}) %>
+		</div>
+	<% } %>
+</div>
