@@ -3,10 +3,14 @@
 	color: $color-white;
 
 	background-color: $color-base;
-	margin-bottom: $spacing-xxl;
 
 	overflow: hidden;
 	position: relative;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 
 	&__btn {
 		color: $color-white;
@@ -24,6 +28,11 @@
 
 		.logo {
 			color: $color-accent;
+
+			@include screen-xs-max {
+				float: right;
+				margin-right: 5%;
+			}
 		}
 	}
 }

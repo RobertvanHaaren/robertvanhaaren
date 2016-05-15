@@ -1,3 +1,7 @@
+$screen-xs: (
+	breakpoint: 768px
+);
+
 $color-base: #000000;
 $color-white: #fff;
 $color-accent: #FFD300;
@@ -12,7 +16,9 @@ $weight-primary-medium: 700;
 $weight-primary-bold: 900;
 
 
-$size-m: 16px;
+$size-s: .9em;
+$size-m: 18px;
+$size-m-xs: 15px;
 $size-l: 1.2em;
 
 

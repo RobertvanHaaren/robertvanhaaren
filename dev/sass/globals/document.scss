@@ -8,6 +8,10 @@ body {
 	@include main-font;
 	color: $color-base;
 	line-height: $line-height-m;
+
+	@include screen-xs-max {
+		font-size: $size-m-xs;
+	}
 }
 
 .container {
@@ -18,26 +22,12 @@ body {
 	&.container--text {
 		max-width: 800px;
 	}
-}
 
-.page {
-	width: 100%;
-	background-color: white;
-	@include transition(transform);
-}
+	&.container--push-top {
+		margin-top: 8em;
 
-.page.page--project {
-	position: fixed;
-	transform: translateX(100%);
-}
-
-body.page-project-open {
-	.page.page--overview {
-		position: fixed;
-		transform: translateX(-100%);
-	}
-	.page.page--project {
-		position: relative;
-		transform: translateX(0);
+		@include screen-xs-max {
+			margin-bottom: $spacing-xl;
+		}
 	}
 }

@@ -1,7 +1,10 @@
 <%
-    var appDesc = 'An ambitious interaction designer based in Amsterdam',
-        appUrl = 'http://robertvanhaaren.nl',
-        appName = 'Robert van Haaren';
+
+    console.log(meta);
+
+    var appDesc = meta.description || 'An ambitious interaction designer based in Amsterdam',
+        appUrl = meta.url || 'http://robertvanhaaren.nl',
+        appName = meta.title ? meta.title+' | Robert van Haaren' : 'Robert van Haaren';
 
     var rootPath = '/www/';
 %>
@@ -61,10 +64,3 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
-
-    <%- body %>
-
-    <script src="<%= rootPath %>js/app.js?<%= Date.now() %>"></script>
-
-  </body>
-</html>

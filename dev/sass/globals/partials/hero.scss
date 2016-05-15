@@ -27,4 +27,13 @@
     	border-bottom: $border-style $border-width $color-accent;
     	padding-bottom: 0em;
 	}
+
+	.logo {
+		color: $color-accent;
+	}
+
+	@include screen-xs-max {
+		height: 500px;
+		margin-bottom: 0;
+	}
 }
