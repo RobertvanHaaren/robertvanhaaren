@@ -72,7 +72,7 @@
 
 			opacity: 0;
 			transform: translateX(70px);
-			@include transition((opacity, transform), $transition-duration-l, $delay: .2s);
+			@include transition((opacity, transform), $transition-duration-l);
 
 			@include screen-xs-max {
 				width: 100%;
@@ -107,7 +107,7 @@
 
 			opacity: 0;
 			transform: translateX(-70px);
-			@include transition((opacity, transform), $transition-duration-l, $delay: .2s);
+			@include transition((opacity, transform), $transition-duration-l);
 
 			img {
 				float: right;

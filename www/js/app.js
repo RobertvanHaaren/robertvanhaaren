@@ -32,6 +32,10 @@ var dataOnScreenToggle = {
 	_isOnScreen: function _isOnScreen(el) {
 		var win = window;
 
+		//adds an extra offset so the class isn't added
+		//untill its completely in the viewport
+		var extraOffset = el.offsetHeight;
+
 		var viewport = {
 			top: win.scrollY,
 			left: win.scrollX
@@ -40,7 +44,7 @@ var dataOnScreenToggle = {
 		viewport.bottom = viewport.top + win.innerHeight;
 
 		var bounds = {
-			top: el.offsetTop,
+			top: el.offsetTop + extraOffset,
 			left: el.offsetLeft
 		};
 		bounds.right = bounds.left + el.offsetWidth;
