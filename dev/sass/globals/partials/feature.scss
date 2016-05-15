@@ -70,9 +70,8 @@
 			width: 800px;
 			margin-right: -12.5em;
 
-			opacity: 0;
+			@extend %el-faded;
 			transform: translateX(70px);
-			@include transition((opacity, transform), $transition-duration-l);
 
 			@include screen-xs-max {
 				width: 100%;
@@ -81,8 +80,7 @@
 		}
 
 		&.feature--onscreen .feature__device {
-			transform: translateX(0);
-			opacity: 1;
+			@extend %el-faded--visible;
 		}
 	}
 
@@ -93,10 +91,9 @@
 			width: 700px;
 			margin-left: -14.5em;
 
-			opacity: 0;
+			@extend %el-faded;
 			transform: rotate(-10deg) translateX(-100px);
 			transform-origin: 0 100%;
-			@include transition((opacity, transform), $transition-duration-l);
 		}
 
 		.feature__content {
@@ -105,8 +102,8 @@
 		}
 
 		&.feature--onscreen .feature__device {
+			@extend %el-faded--visible;
 			transform: rotate(0) translateX(0);
-			opacity: 1;
 		}
 	}
 
@@ -115,9 +112,8 @@
 			width: 550px;
 			margin-right: -3em;
 
-			opacity: 0;
-			transform: translateX(-70px);
-			@include transition((opacity, transform), $transition-duration-l);
+			@extend %el-faded;
+			transform: translateY(-30px);
 
 			img {
 				float: right;
@@ -140,8 +136,8 @@
 		}
 
 		&.feature--onscreen .feature__device {
+			@extend %el-faded--visible;
 			transform: translateX(0);
-			opacity: 1;
 		}
 	}
 
