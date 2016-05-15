@@ -6,7 +6,7 @@ gulp
 
 * [x] Favicon
 * [x] OG Image
+* [x] Project Page Responsive
 * [ ] Overview Page Responsive
-* [ ] Project Page Responsive
 * [ ] Overview Animations
 * [ ] Projects Copy
