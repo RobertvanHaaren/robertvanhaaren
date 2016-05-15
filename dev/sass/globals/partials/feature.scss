@@ -43,6 +43,17 @@
 		margin-bottom: $spacing-m;
 	}
 
+	&.feature--reversed {
+		.feature__device {
+			float: right;
+			padding-right: 0;
+			padding-left: $spacing-xl;
+		}
+		.feature__content {
+			float: left;
+		}
+	}
+
 	&.feature--iphone {
 		padding-top: 0;
 		.feature__device {
@@ -85,6 +96,10 @@
 			width: 550px;
 			margin-right: -3em;
 
+			opacity: 0;
+			transform: translateX(-70px);
+			@include transition((opacity, transform), $transition-duration-l);
+
 			img {
 				float: right;
 				margin-right: 100px;
@@ -95,7 +110,7 @@
 					float: none;
 					margin: 0;
 				}
-			} 
+			}
 		}
 		.feature__content {
 			top: 8em;
@@ -104,16 +119,10 @@
 				top: 0;
 			}
 		}
-	}
 
-	&.feature--reversed {
-		.feature__device {
-			float: right;
-			padding-right: 0;
-			padding-left: $spacing-xl;
-		}
-		.feature__content {
-			float: left;
+		&.feature--onscreen .feature__device {
+			transform: translateX(0);
+			opacity: 1;
 		}
 	}
 

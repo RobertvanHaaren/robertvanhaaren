@@ -1,6 +1,10 @@
 .story {
 	margin-top: $spacing-xxl;
 
+	@include screen-xs-max {
+		margin-top: $spacing-xl;
+	}
+
 	img, p,
 	blockquote,
 	&__banner,
