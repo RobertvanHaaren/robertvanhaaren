@@ -4,7 +4,9 @@
 >
 	<div class="container">
 		<div class="feature__device">
-			<img src="/www/img/<%= imgSrc %>" alt="<%= title %>" />
+			<% for(var i = 0; i < imgs.length; i++) { %>
+				<img src="/www/img/<%= imgs[0] %>" alt="<%= title %>" />
+			<% } %>
 		</div>
 		<div class="feature__content">
 			<a href="/projects/<%= slug %>" title="<%= title %>">

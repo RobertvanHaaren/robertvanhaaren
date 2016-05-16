@@ -56,12 +56,42 @@
 
 	&.feature--iphone {
 		padding-top: 0;
+
 		.feature__device {
 			width: 500px;
+			height: 680px;
 			margin-left: -3em;
+
+			position: relative;
+			top: 40px;
+
+			@extend %el-faded;
+			transform: translateX(40px) rotate(10deg);
+			transform-origin: 100% 100%;
+
+			img {
+				position: absolute;
+				transform-origin: 100% 100%;
+
+				&:first-child {
+					@include transition(transform, $transition-duration-l);
+					transform: rotate(0deg);				
+				}
+			}
 		}
 		.feature__content {
-			top: 10em;
+			top: 7em;
+		}
+
+		&.feature--onscreen .feature__device {
+			@extend %el-faded--visible;
+			transform: translateX(0) rotate(0);
+
+			img {
+				&:first-child {
+					transform: rotate(-10deg);				
+				}
+			}
 		}
 	}
 	
