@@ -8,6 +8,10 @@
 
 	margin-bottom: $spacing-xxl;
 
+	@media all and (max-height: 1080px){
+		margin-bottom: -$spacing-xl;
+	}
+
 	.hero__wrapper {
 		display: table-cell;
 		vertical-align: middle;
