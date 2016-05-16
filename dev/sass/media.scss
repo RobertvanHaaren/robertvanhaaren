@@ -38,10 +38,41 @@
 	}
 }
 
+@include media($max-width: $lg-s-container-width){
+	.feature.feature--iphone-vertical .feature__device {
+		width: 360px;
+
+		img {
+			float: left;
+		    max-height: 450px;
+		    margin-left: -60px;
+		    margin-top: 45px;
+		}
+	}
+
+	.feature.feature--iphone-vertical .feature__content {
+		top: 0em;
+		max-width: 50%;
+	}
+}
 
 //TABLET DOWN
 @include media($max-width: $md-container-width){
+	.feature.feature--iphone-vertical .feature__device {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
 
+		img {
+			float: none;
+		    margin: 0 auto;
+		}
+	}
+
+	.feature.feature--iphone-vertical .feature__content {
+		top: 1em;
+		max-width: 100%;
+	}
 }
 
 
