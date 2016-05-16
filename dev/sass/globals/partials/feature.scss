@@ -3,6 +3,11 @@
 	margin-bottom: $spacing-xxl;
 	padding-top: $spacing-xxl;
 
+	@media all and (max-height: 1079px){
+		margin-bottom: $spacing-xl;
+		padding-top: $spacing-xl;
+	}
+
 	&__device {
 		width: 50%;
 		padding-right: $spacing-xl;

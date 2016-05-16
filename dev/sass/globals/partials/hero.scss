@@ -9,7 +9,11 @@
 	margin-bottom: $spacing-xxl;
 
 	@media all and (max-height: 1170px){
-		margin-bottom: -$spacing-xl;
+		margin-bottom: 0;
+	}
+
+	@media all and (max-height: 1079px){
+		margin-bottom: -$spacing-xxl;
 	}
 
 	.hero__wrapper {
