@@ -1,0 +1,88 @@
+//BIG SCREEN DOWN TO TABLET
+@include media($max-width: $xxl-container-width){
+	.feature.feature--iphone-vertical .feature__device img {
+		margin-right: 20px;
+	}
+}
+
+
+//BIG SCREEN DOWN TO TABLET
+@include media($md-container-width, $xl-container-width){
+	.feature.feature--iphone-vertical .feature__content {
+	    top: 4em;
+	}
+}
+
+
+//SMALL DESKTOP
+@include media($lg-container-width, $xl-container-width){
+
+}
+
+
+//TABLET
+@include media($md-container-width, $lg-container-width){
+	.feature.feature--iphone-vertical .feature__device {
+		width: 460px;
+
+		img {
+			float: left;
+		    max-height: 550px;
+		    margin-left: -40px;
+		}
+	}
+
+	.feature.feature--iphone-vertical .feature__content {
+		top: 1.4em;
+		width: 70%;
+	}
+}
+
+@include media($max-width: $lg-s-container-width){
+	.feature.feature--iphone-vertical .feature__device {
+		width: 360px;
+
+		img {
+			float: left;
+		    max-height: 450px;
+		    margin-left: -60px;
+		    margin-top: 45px;
+		}
+	}
+
+	.feature.feature--iphone-vertical .feature__content {
+		top: 0em;
+		max-width: 50%;
+	}
+}
+
+//TABLET DOWN
+@include media($max-width: $md-container-width){
+	.feature.feature--iphone-vertical .feature__device {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+
+		img {
+			float: none;
+		    margin: 0 auto;
+		}
+	}
+
+	.feature.feature--iphone-vertical .feature__content {
+		top: 1em;
+		max-width: 100%;
+	}
+}
+
+
+//FABLET
+@include media($sm-container-width, $md-container-width){
+
+}
+
+
+//MOBILE
+@include media($max-width: $sm-container-width){
+
+}
