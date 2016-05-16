@@ -31,3 +31,23 @@ body {
 		}
 	}
 }
+
+.seymour {
+	position: relative;
+
+	&__overlay {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__img {
+		width: 110px;
+		
+		position: absolute;
+		top: 15px;
+		left: 50%;
+    	margin-left: 170px;
+		
+		border-bottom: solid 5px $color-accent;
+	}
+}
