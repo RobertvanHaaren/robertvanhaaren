@@ -41,13 +41,22 @@ body {
 	}
 
 	&__img {
-		width: 110px;
+		height: 94px;
+		width: 125px;
 		
 		position: absolute;
-		top: 14px;
+		top: 19px;
 		left: 50%;
-    	margin-left: 170px;
+    	margin-left: 160px;
 		
 		border-bottom: solid 5px $color-accent;
+		background: url('/www/img/seymour.png');
+		background-size: 125px 94px;
+		z-index: 1;
+
+		&:hover {
+			background: url('/www/img/seymour-small-repeat.gif');
+			background-size: 125px 94px;
+		}
 	}
 }
