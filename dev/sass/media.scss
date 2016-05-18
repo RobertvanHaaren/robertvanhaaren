@@ -26,6 +26,16 @@
 		margin-top: 4.5em;
 		width: 700px;
 	}
+
+	.feature.feature--ipad .feature__device {
+		margin-left: -15.5em;
+		padding-right: 0;
+		width: 680px;
+	}
+
+	.feature.feature--ipad .feature__content {
+		padding-right: 40px;
+	}
 }
 
 
@@ -53,6 +63,17 @@
 	.feature.feature--laptop .feature__device {
 		margin-top: 6.5em;
 		width: 650px;
+	}
+
+	.feature.feature--ipad .feature__device {
+		margin-left: -18.5em;
+		margin-top: 2.8em;
+		padding-right: 0;
+		width: 600px;
+	}
+
+	.feature.feature--ipad .feature__content {
+		padding-right: 0;
 	}
 }
 
@@ -104,6 +125,17 @@
 		padding:0px 0px 40px;
 		width: 100%;
 	}
+
+	.feature.feature--ipad .feature__device {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.feature.feature--ipad .feature__content {
+		padding-top: 30px;
+		left: 0;
+	}
 }
 
 
@@ -115,7 +147,10 @@
 
 //MOBILE
 @include media($max-width: $sm-container-width){
-
+	.feature.feature--ipad .feature__device {
+		margin-left: -8.5em;
+		width: 650px;
+	}
 }
 
 //MOBILE SMALL
@@ -125,5 +160,11 @@
 			min-width: 230px;
 			width: 100%;
 		}
+	}
+
+	.feature.feature--ipad .feature__device {
+		margin-left: -8.5em;
+		margin-top: 0;
+		width: 600px;
 	}
 }
