@@ -86,3 +86,13 @@
 @include media($max-width: $sm-container-width){
 
 }
+
+//MOBILE SMALL
+@include media($max-width: $xs-container-width){
+	.feature.feature--iphone-vertical .feature__device {
+		img {
+			width: 100%;
+			background-color: black;
+		}
+	}
+}
