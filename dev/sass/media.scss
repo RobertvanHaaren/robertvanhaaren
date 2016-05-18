@@ -3,6 +3,12 @@
 	.feature.feature--iphone-vertical .feature__device img {
 		margin-right: 20px;
 	}
+
+	.feature.feature--laptop .feature__device {
+		margin-right: -16.5em;
+		margin-top: 2.5em;
+		width: 750px;
+	}
 }
 
 
@@ -16,12 +22,19 @@
 
 //SMALL DESKTOP
 @include media($lg-container-width, $xl-container-width){
-
+	.feature.feature--laptop .feature__device {
+		margin-top: 4.5em;
+		width: 700px;
+	}
 }
 
 
 //TABLET
 @include media($md-container-width, $lg-container-width){
+	.feature.feature--iphone-vertical {
+		padding-top: 150px;
+	}
+
 	.feature.feature--iphone-vertical .feature__device {
 		width: 460px;
 
@@ -35,6 +48,11 @@
 	.feature.feature--iphone-vertical .feature__content {
 		top: 1.4em;
 		width: 70%;
+	}
+
+	.feature.feature--laptop .feature__device {
+		margin-top: 6.5em;
+		width: 650px;
 	}
 }
 
@@ -53,6 +71,11 @@
 	.feature.feature--iphone-vertical .feature__content {
 		top: 0em;
 		max-width: 50%;
+	}
+
+	.feature.feature--laptop .feature__device {
+		margin-top: 7.5em;
+		width: 625px;
 	}
 }
 
@@ -73,6 +96,14 @@
 		top: 1em;
 		max-width: 100%;
 	}
+
+	.feature.feature--laptop .feature__device {
+		float: left;
+		margin: 0 auto;
+		min-width: 400px;
+		padding:0px 0px 40px;
+		width: 100%;
+	}
 }
 
 
@@ -91,8 +122,8 @@
 @include media($max-width: $xs-container-width){
 	.feature.feature--iphone-vertical .feature__device {
 		img {
+			min-width: 230px;
 			width: 100%;
-			background-color: black;
 		}
 	}
 }
