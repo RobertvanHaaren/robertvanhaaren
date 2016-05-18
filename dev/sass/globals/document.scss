@@ -54,7 +54,7 @@ body {
 		background-size: 125px 94px;
 		z-index: 1;
 
-		&:hover {
+		&:hover, &:active, &:focus {
 			background: url('/www/img/seymour-small-repeat.gif');
 			background-size: 125px 94px;
 		}
