@@ -103,18 +103,39 @@
 	&.feature--laptop {
 		.feature__device {
 			width: 800px;
+			height: 370px;
 			margin-right: -12.5em;
 
-			@extend %el-faded;
-			transform: translateX(70px);
+			position: relative;
 
 			@include screen-xs-max {
 				width: 100%;
 				margin-right: 0;
 			}
+
+			img {
+				position: absolute;
+
+				@extend %el-faded;
+				transform: translateX(180px);
+
+				&:first-child {
+					max-width: 620px;
+					transition: transform $transition-duration-l, opacity .5s;
+				}
+
+				&:last-child {
+					max-width: 470px;
+					bottom: 0;
+					right: 0;
+
+					transition: transform $transition-duration-l, opacity .5s;
+					transition-delay: .1s;
+				}
+			}
 		}
 
-		&.feature--onscreen .feature__device {
+		&.feature--onscreen .feature__device img {
 			@extend %el-faded--visible;
 		}
 	}
@@ -144,16 +165,37 @@
 	&.feature--iphone-vertical {
 		.feature__device {
 			width: 550px;
-			margin-right: -3em;
+			height: 600px;
 
-			@extend %el-faded;
-			transform: translateY(-30px);
+			position: relative;
 
 			img {
-				float: right;
-				margin-right: 100px;
-			    max-height: 650px;
 				width: auto;
+				height: auto;
+				position: absolute;
+
+				&:first-child {
+					max-width: 300px;
+					right: 100px;
+					z-index: 1;
+
+					opacity: 0;
+					transform: translateX(-15px);
+
+					transition: transform $transition-duration-l, opacity .5s;
+				}
+
+				&:last-child {
+					max-width: 300px;
+					max-height: 560px;
+					top: 45px;
+
+					opacity: 0;
+					transform: translateX(40px);
+
+					transition: transform $transition-duration-l, opacity .5s;
+					transition-delay: $transition-duration-l / 3;
+				}
 
 				@include screen-xs-max {
 					float: none;
@@ -169,9 +211,15 @@
 			}
 		}
 
-		&.feature--onscreen .feature__device {
-			@extend %el-faded--visible;
-			transform: translateX(0);
+		&.feature--onscreen .feature__device img {
+			&:first-child {
+				opacity: 1;
+				transform: translateX(0);
+			}
+			&:last-child {
+				opacity: 1;
+				transform: translateX(0);
+			}
 		}
 	}
 
