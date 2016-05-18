@@ -7,7 +7,7 @@ gulp
 * [x] Favicon
 * [x] OG Image
 * [x] Project Page Responsive
-* [ ] Seymour Wapperende Handjes
+* [x] Seymour Wapperende Handjes
+* [x] Overview Animations
 * [ ] Overview Page Responsive
-* [ ] Overview Animations
 * [ ] Projects Copy
