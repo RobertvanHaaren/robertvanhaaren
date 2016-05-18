@@ -33,6 +33,11 @@
 		width: 680px;
 	}
 
+	.feature.feature--iphone .feature__device {
+		width: 480px;
+    	margin-right: -5em;
+	}
+
 	.feature.feature--ipad .feature__content {
 		padding-right: 40px;
 	}
@@ -75,6 +80,12 @@
 	.feature.feature--ipad .feature__content {
 		padding-right: 0;
 	}
+
+	.feature.feature--iphone .feature__device {
+    	margin-right: -5em;
+    	padding-top: 6em;
+    	width: 380px;
+	}
 }
 
 @include media($max-width: $lg-s-container-width){
@@ -114,7 +125,7 @@
 	}
 
 	.feature.feature--iphone-vertical .feature__content {
-		top: 1em;
+		top: 0em;
 		max-width: 100%;
 	}
 
@@ -136,6 +147,19 @@
 		padding-top: 30px;
 		left: 0;
 	}
+
+	.feature.feature--iphone .feature__device {
+		float: none;
+    	margin: 0 auto;
+    	padding: 0;
+    	max-width: 400px;
+    	padding-top: 6em;
+    	width: 100%;
+	}
+
+	.feature.feature--iphone .feature__content {
+		top: 0em;
+	}
 }
 
 
@@ -150,6 +174,12 @@
 	.feature.feature--ipad .feature__device {
 		margin-left: -8.5em;
 		width: 650px;
+	}
+
+	.feature.feature--iphone .feature__device {
+		float: right;
+		margin-right: -2em;
+		margin-bottom: -5em;
 	}
 }
 
@@ -166,5 +196,17 @@
 		margin-left: -8.5em;
 		margin-top: 0;
 		width: 600px;
+	}
+
+	.feature.feature--iphone .feature__device {
+		padding-top: 2em; 
+		margin-bottom: -15em;
+	}
+}
+
+@include media($max-width: 300px){
+	.feature.feature--iphone .feature__device {
+		padding-top: 2em; 
+		margin-bottom: -19em;
 	}
 }
