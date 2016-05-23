@@ -33,7 +33,7 @@
 //SMALL DESKTOP
 @include media($lg-container-width, $xl-container-width){
 	.feature.feature--laptop .feature__device {
-		margin-top: 4.5em;
+		margin-top: 3em;
 		width: 700px;
 	}
 
@@ -87,7 +87,7 @@
 	}
 
 	.feature.feature--laptop .feature__device {
-		margin-top: 6.5em;
+		margin-top: 5em;
 		width: 650px;
 	}
 
@@ -132,7 +132,7 @@
 	}
 
 	.feature.feature--laptop .feature__device {
-		margin-top: 7.5em;
+		margin-top: 6em;
 		width: 625px;
 	}
 }
@@ -176,6 +176,10 @@
 		width: 100%;
 	}
 
+	.feature.feature--laptop .feature__content {
+		margin-top: 3em;
+	}
+
 	.feature.feature--ipad .feature__device {
 		margin: 0 auto;
 		text-align: center;
@@ -212,6 +216,20 @@
 
 }
 
+@include media($max-width: 690px){
+	.feature.feature--laptop .feature__device img:last-child {
+		display: none;
+	}
+
+	.feature.feature--laptop .feature__device {
+		padding: 0;
+	}
+
+	.feature.feature--laptop .feature__content {
+		margin-top: 0em;
+	}
+}
+
 
 //MOBILE
 @include media($max-width: $sm-container-width){
@@ -233,6 +251,10 @@
 	.seymour__img {
 		margin-left: 80px;
 	}
+
+	.feature.feature--laptop .feature__content {
+		margin-top: -4em;
+	}
 }
 
 @include media($max-width: 430px){
@@ -250,6 +272,10 @@
 
 	.push-top.seymour .btn.btn--big {
 		margin-top: 4.5em;
+	}
+
+	.feature.feature--laptop .feature__content {
+		margin-top: -6em;
 	}
 }
 
