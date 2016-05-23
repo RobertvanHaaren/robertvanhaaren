@@ -15,7 +15,17 @@
 //BIG SCREEN DOWN TO TABLET
 @include media($md-container-width, $xl-container-width){
 	.feature.feature--iphone-vertical .feature__content {
-	    top: 4em;
+	    top: 5em;
+	    margin-bottom: 2em;
+    	padding-bottom: 3em;
+	}
+	
+	.feature.feature--iphone-vertical .feature__device {
+		width: 480px;
+	}
+
+	.feature.feature--iphone-vertical .feature__device img:first-child {
+		right: 8px;
 	}
 }
 
@@ -39,7 +49,7 @@
 	}
 
 	.feature.feature--ipad .feature__content {
-		padding-right: 40px;
+		padding-right: 35px;
 	}
 }
 
@@ -51,18 +61,29 @@
 	}
 
 	.feature.feature--iphone-vertical .feature__device {
-		width: 460px;
+		width: 400px;
 
 		img {
 			float: left;
 		    max-height: 550px;
 		    margin-left: -40px;
 		}
+
+		img:last-child {
+			max-height: 504px;
+		}
+	}
+
+	.feature.feature--iphone-vertical.feature--onscreen .feature__device img:first-child {
+		right: 40px;
+		margin-right: -0.1em;
 	}
 
 	.feature.feature--iphone-vertical .feature__content {
 		top: 1.4em;
 		width: 70%;
+		margin-bottom: 0em;
+    	padding-bottom: 0em;
 	}
 
 	.feature.feature--laptop .feature__device {
@@ -90,13 +111,18 @@
 
 @include media($max-width: $lg-s-container-width){
 	.feature.feature--iphone-vertical .feature__device {
-		width: 360px;
+		width: 340px;
 
 		img {
 			float: left;
 		    max-height: 450px;
 		    margin-left: -60px;
 		    margin-top: 45px;
+		}
+
+		img:last-child {
+			max-height: 402px;
+			right: 150px;
 		}
 	}
 
@@ -114,7 +140,8 @@
 //TABLET DOWN
 @include media($max-width: $md-container-width){
 	.feature.feature--iphone-vertical .feature__device {
-		margin: 0 auto;
+		margin: 0 auto -3em;
+		padding: 0;
 		text-align: center;
 		width: 100%;
 
@@ -122,6 +149,18 @@
 			float: none;
 		    margin: 0 auto;
 		}
+	}
+	
+	.feature.feature--iphone-vertical .feature__device img:first-child {
+		max-height: 500px;
+		margin-left: -70px;
+    	left: 50%;
+	}
+
+	.feature.feature--iphone-vertical .feature__device img:last-child {
+		max-height: 452px;
+		margin-left: -180px;
+    	left: 50%;
 	}
 
 	.feature.feature--iphone-vertical .feature__content {
@@ -216,12 +255,6 @@
 
 //MOBILE SMALL
 @include media($max-width: $xs-container-width){
-	.feature.feature--iphone-vertical .feature__device {
-		img {
-			min-width: 230px;
-			width: 100%;
-		}
-	}
 
 	.feature.feature--ipad .feature__device {
 		margin-left: -8.5em;
@@ -232,6 +265,20 @@
 	.feature.feature--iphone .feature__device {
 		padding-top: 2em; 
 		margin-bottom: -15em;
+	}
+
+	.feature.feature--iphone-vertical .feature__device img:first-child {
+		max-height: 450px;
+		margin-left: -55px;
+	}
+
+	.feature.feature--iphone-vertical .feature__device img:last-child {
+		max-height: 400px;
+		margin-left: -165px;
+	}
+
+	.feature.feature--iphone-vertical .feature__device {
+		margin: 0 auto -8em;
 	}
 }
 
@@ -251,5 +298,19 @@
 	.seymour__img {
 		top: 147px;
     	left: 23.5%;
+	}
+
+	.feature.feature--iphone-vertical .feature__device img:first-child {
+		max-height: 400px;
+		margin-left: -51px;
+	}
+
+	.feature.feature--iphone-vertical .feature__device img:last-child {
+		max-height: 350px;
+		margin-left: -141px;
+	}
+
+	.feature.feature--iphone-vertical .feature__device {
+		margin: 0 auto -12em;
 	}
 }
