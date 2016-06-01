@@ -1,5 +1,29 @@
 <%- partial('_inc/layout/header', { meta: {} }) %>
 
+<%
+	var sideProjects = [{
+		title: 'Beware Hot Coffee Intro',
+		imgSrc: 'https://d13yacurqjgara.cloudfront.net/users/249159/screenshots/2750816/u-animation-beware-hot-coffee.gif',
+		linkUrl: 'https://dribbble.com/shots/2750816-Beware-Hot-Coffee-Intro',
+		likes: 6
+	}, {
+		title: 'Duxilio Logo',
+		imgSrc: 'https://d13yacurqjgara.cloudfront.net/users/249159/screenshots/2087360/duxilio-logo-dribbble.png',
+		linkUrl: 'https://dribbble.com/shots/2087360-Duxilio-new-start-up-logo-design',
+		likes: 8
+	}, {
+		title: 'Map Icon',
+		imgSrc: 'https://d13yacurqjgara.cloudfront.net/users/249159/screenshots/2100412/map_icon.png',
+		linkUrl: 'https://dribbble.com/shots/2100412-Map-icon',
+		likes: 10
+	}, {
+		title: 'Literally Lyrics',
+		imgSrc: 'https://d13yacurqjgara.cloudfront.net/users/249159/screenshots/2100356/literallylyrics.jpg',
+		linkUrl: 'https://dribbble.com/shots/2100356-Literally-Lyrics',
+		likes: 5
+	}];
+%>
+
 <section class="hero">
 	<div class="hero__wrapper">
 		<div class="container">
@@ -67,9 +91,33 @@
 	}) %>
 
 <div class="container">
-	<div class="text-center push-top seymour">
-		<h3 class="seymour__overlay">Wanna <u>see more?</u></h3>
-		<div ontouchstart class="seymour__img"></div>
+	<div class="text-center push-top">
+		<div class="seymour">
+			<h3 class="seymour__overlay">Wanna <u>see more?</u></h3>
+			<div ontouchstart class="seymour__img"></div>
+		</div>
+		<ul class="project-previews">
+			<%
+			for (var i = 0; i < sideProjects.length; i++) {
+				var curr = sideProjects[i];	
+			%>
+				<li class="project-previews__preview">
+					<a href="<%= curr.linkUrl %>" title="<%= curr.title %>">
+						<div class="project-previews__img">
+							<img src="<%= curr.imgSrc %>" alt="<%= curr.title %>" />
+						</div>
+						<div class="project-previews__footer">
+							<small class="project-previews__footer__likes">
+								<span>
+									<% include ../../www/img/heart.svg %>
+								</span>
+								<%= curr.likes %>
+							</small>
+						</div>
+					</a>
+				</li>
+			<% } %>
+		</ul>
 		<a href="https://dribbble.com/NoPain_NoGame_" class="btn btn--big" title="Check out more work on Dribbble">Show me more work</a>
 	</div>
 </div>
