@@ -15,30 +15,28 @@
 <div class="story">
 	<div class="container">
 		<%- partial('../_inc/project/img', {
-				src: '../www/img/projects/blackdove/room-design.jpg',
+				src: '../www/img/projects/blackdove/art-gallery.jpg',
 				alt: ''
 			}) %>
 	</div>
 
-	<%- partial('../_inc/project/quote-banner', {
-			quote: 'We aimed to address accurate communication of the company name, brand repositioning, and the merger of two unique brand experiences.',
-			cite: 'Marc Billings, CEO @ <a>Blackdove</a>'
+	<%- partial('../_inc/project/video-banner', {
+			iframeSrc: 'https://player.vimeo.com/video/147291839'
 		}) %>
 
 	<div class="container">
-		<%- partial('../_inc/project/img-group', {
-			imgs: [{
+		<%- partial('../_inc/project/img', {
 				src: '../www/img/projects/blackdove/emailing.jpg',
 				alt: ''
-			}, {
+			}) %>
+		<%- partial('../_inc/project/img', {
 				src: '../www/img/projects/blackdove/card.jpg',
 				alt: ''
-			}]
-		}) %>
+			}) %>
 		<%- partial('../_inc/project/img', {
-			src: '../www/img/projects/blackdove/art-gallery.jpg',
-			alt: ''
-		}) %>
+				src: '../www/img/projects/blackdove/room-design.jpg',
+				alt: ''
+			}) %>
 	</div>
 </div>
 
