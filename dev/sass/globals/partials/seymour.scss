@@ -1,0 +1,53 @@
+.seymour {
+	position: relative;
+
+	&__overlay {
+		position: relative;
+		z-index: 1;
+		margin-left: -125px;
+	}
+
+	&__img {
+		height: 94px;
+		width: 125px;
+		
+		position: absolute;
+		top: -58%;
+		left: 45%;
+    	margin-left: 170px;
+		
+		border-bottom: solid 5px $color-accent;
+		z-index: 1;
+
+		&:after,
+		&:before {
+			content: '';
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:before {
+			background-image: url(/www/img/seymour.png);
+			background-size: 100%;
+		}
+
+		&:after {
+			opacity: 0;
+			background-image: url(/www/img/seymour-small-repeat.gif);
+			background-size: 100%;
+		}
+
+		&:hover, &:active, &:focus {
+			&:before {
+				opacity: 0;
+			}
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+}
