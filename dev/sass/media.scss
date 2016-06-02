@@ -196,7 +196,7 @@
     	margin: 0 auto;
     	padding: 0;
     	max-width: 400px;
-    	padding-top: 6em;
+    	padding-top: 2em;
     	width: 100%;
 	}
 
@@ -264,13 +264,14 @@
 @include media($max-width: 430px){
 	.seymour__overlay {
 		margin-left: 0em;
+		margin-bottom: 97px;
 	}
 
 	.seymour__img {
 		border: none;
-		top: 103px;
-    	left: 29.5%;
-		margin-left: 0;
+		top: 53px;
+    	left: 50%;
+    	margin-left: -60.5px;
 		z-index: 1;
 	}
 

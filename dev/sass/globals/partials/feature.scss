@@ -8,6 +8,11 @@
 		padding-top: $spacing-xl;
 	}
 
+	@include screen-xs-max {
+		margin-bottom: $spacing-xl;
+		padding-top: $spacing-xl;
+	}
+
 	&__device {
 		width: 50%;
 		padding-right: $spacing-xl;
@@ -73,6 +78,10 @@
 			@extend %el-faded;
 			transform: translateX(40px) rotate(10deg);
 			transform-origin: 100% 100%;
+
+			@include screen-xs-max {
+				height: 640px;
+			}
 
 			img {
 				position: absolute;
