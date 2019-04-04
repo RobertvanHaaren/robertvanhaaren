@@ -26,6 +26,12 @@
 	}
 }
 
+.menu {
+	a {
+		border-bottom: none; 
+	}
+}
+
 
 .recognition {
 	padding: 120px 0 0;
@@ -125,14 +131,27 @@
 		}
 		
 		.simyo-logo {
-			padding-top: 22px;
+			padding-top: 18px;
 			width: 80px;
 		}
 	}
 }
 
-.skills {
-	border-radius: 50px;
-	border: 1px solid white;
-	color: white;
+.skills-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+
+	.skills {
+		border-radius: 50px;
+		border: 1px solid #ccc;
+		color: black;
+		margin: 10px 5px 0;
+		padding: 0px 15px;
+		line-height: 2.3em;
+	}
 }
