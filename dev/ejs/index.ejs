@@ -94,6 +94,12 @@
 	</div>
 </div>
 
+<div class="container">
+	<div class="text-center push-top">
+		<h4><u>Showcase</u></h4>
+	</div>
+</div>
+
 <%- partial('_inc/feature', {
 		deviceType: 'iphone-vertical',
 		imgs: ['iphone-blackdove-01.png', 'iphone-blackdove-02.png'],
@@ -152,29 +158,17 @@
 			<h3 class="seymour__overlay">Wanna <u>see more?</u></h3>
 			<div ontouchstart class="seymour__img"></div>
 		</div>
-		<ul class="project-previews">
-			<%
-			for (var i = 0; i < sideProjects.length; i++) {
-				var curr = sideProjects[i];	
-			%>
-				<li class="project-previews__preview">
-					<a target="_blank" href="<%= curr.linkUrl %>" title="<%= curr.title %>">
-						<div class="project-previews__img">
-							<img src="<%= curr.imgSrc %>" alt="<%= curr.title %>" />
-						</div>
-						<div class="project-previews__footer">
-							<small class="project-previews__footer__likes">
-								<span>
-									<% include ../../www/img/heart.svg %>
-								</span>
-								<%= curr.likes %>
-							</small>
-						</div>
-					</a>
-				</li>
-			<% } %>
-		</ul>
-		<a href="https://dribbble.com/RobertvanHaaren" target="_blank" class="btn btn--big" title="Check out more work on Dribbble">Show me more work</a>
+
+		<div class="container">
+			<div class="text-center">
+				<div class="see-more">
+		            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.duxilio.sock"><img src="www/img/projects/sock/project34-sock.jpg" alt="Sock App"></a>
+		            <a target="_blank" href="https://www.yourproductions.nl/"><img src="www/img/projects/yourproductions/project02-yourproductions.jpg" alt="yourproductions"></a>
+		            <a target="_blank" href="https://duxilio.com"><img src="www/img/projects/donny.fund/project16-donny.fund.jpg" alt="duxilio"></a>
+		        </div>
+	        </div>
+	    </div>
+		<a href="/portfolio.html" target="_blank" class="btn btn--big" title="Check out more work on Dribbble">Show me more work</a>
 	</div>
 </div>
 

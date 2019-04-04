@@ -155,3 +155,28 @@
 		line-height: 2.3em;
 	}
 }
+
+.see-more {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
+
+	a {
+		border-bottom: none;
+		float: left;
+	    overflow: hidden;
+	    height: 300px;
+	    width: 300px;
+	}
+
+	img {
+		border-radius: 30px;
+	    padding: 20px;
+	    height: 300px;
+	    width: 300px;
+	}
+}
