@@ -357,6 +357,13 @@
 }
 
 
+@include media($max-width: 440px){
+	.clients .client-logo img {
+		padding: 20px 0px;
+	}
+}
+
+
 @include media($max-width: 380px){
 	section .row.grid .single-portfolio {
 	    height: 400px;
