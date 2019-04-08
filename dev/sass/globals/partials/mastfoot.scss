@@ -7,3 +7,35 @@
 		color: $color-base;
 	}
 }
+
+
+.social {
+	padding: 0px 0 0px;
+
+	.social-logos {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 auto;
+		overflow: hidden;
+		padding-top: 20px;
+		text-align: center;
+		max-width: 800px;
+		width: 100%;
+
+		a {
+			border: none;
+			margin: 0 5px;
+		}
+
+		img {
+			width: 35px;
+		}
+
+		.logo {
+			padding: 5px;
+			width: 100%;
+		}
+	}
+}
