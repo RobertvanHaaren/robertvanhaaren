@@ -181,7 +181,14 @@
 	}
 }
 
-.showcase .blackdove-showcase {
-    height: 960px;
-    width: 680px;
+.showcase {
+	max-width: 1200px;
+
+	.blackdove-showcase {
+		background-color: red;
+		border-radius: 10px;
+	    height: 560px;
+	    margin: 0 10px;
+	    width: 350px;
+	}
 }
