@@ -38,3 +38,16 @@
 		color: white;
 	}
 }
+
+.btn-02 {
+	background-color: black;
+	border-radius: 50px;
+	color: white;
+	margin-top: 30px;
+	opacity: 0.75;
+	padding: 18px 50px 15px;
+
+	&:hover {
+		opacity: 1;
+	}
+}
