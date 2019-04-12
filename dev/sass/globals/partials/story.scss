@@ -1,22 +1,27 @@
 .story {
-	margin-top: $spacing-xxl;
+	margin-top: $spacing-xl;
 
 	@include screen-xs-max {
 		margin-top: $spacing-xl;
 	}
 
-	img, p,
+	img,
 	blockquote,
 	&__banner,
 	&__img-group {
-		margin-bottom: $spacing-xxl;
+		margin-bottom: $spacing-xl;
 
 		@include screen-xs-max {
 			margin-bottom: $spacing-xl;
 		}
 	}
 
+	p {
+		margin-bottom: $spacing-m;
+	}
+
 	img {
+		border-radius: 10px;
 		width: 100%;
 	}
 
@@ -68,5 +73,14 @@
 			border-color: $color-accent;
 			color: $color-white;
 		}
+	}
+}
+
+.container-video {
+	padding-bottom: 40px;
+	width: 100%;
+
+	iframe {
+		max-height: 450px;
 	}
 }
