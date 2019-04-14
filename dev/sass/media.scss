@@ -27,6 +27,11 @@
 	.feature.feature--iphone-vertical .feature__device img:first-child {
 		right: 8px;
 	}
+
+	.seymour__img {
+		top: -93%;
+		left: 41%;
+	}
 }
 
 
@@ -112,6 +117,11 @@
 	    height: 450px;
 	    padding: 20px;
 	    width: 50%;
+	}
+
+	.seymour__img {
+		top: -93%;
+		left: 38%;
 	}
 }
 
@@ -217,8 +227,8 @@
 	}
 
 	.seymour__img {
-		top: 1px;
-		margin-left: 146px;
+		top: -127%;
+		left: 32%;
 	}
 
 	.project-previews {
@@ -263,11 +273,21 @@
 	section .row.grid .single-portfolio {
 	    height: 690px;
 	}
+
+	.seymour__img {
+		top: -129%;
+		left: 30%;
+	}
 }
 
 @include media($max-width: 600px){
 	section .row.grid .single-portfolio {
 	    height: 600px;
+	}
+
+	.seymour__img {
+		top: -129%;
+		left: 27%;
 	}	
 }
 
@@ -296,7 +316,8 @@
 	}
 
 	.seymour__img {
-		margin-left: 80px;
+		top: -129%;
+		left: 28%;
 	}
 
 	.feature.feature--laptop .feature__content {
@@ -316,9 +337,9 @@
 
 	.seymour__img {
 		border: none;
-		top: 53px;
-    	left: 50%;
-    	margin-left: -60.5px;
+    	left: 20%;
+    	margin-left: 40px;
+    	margin-top: 110px;
 		z-index: 1;
 	}
 
@@ -385,8 +406,9 @@
 
 @include media($max-width: 338px){
 	.seymour__img {
-		top: 147px;
-    	left: 29.5%;
+    	left: 20%;
+    	margin-left: 40px;
+    	margin-top: 110px;
 	}
 
 	section .row.grid .single-portfolio {
