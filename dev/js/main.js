@@ -1,3 +1,3 @@
-import dataOnScreenToggle from './dataOnScreenToggle';
+import initImageModal from './image-modal';
 
-dataOnScreenToggle.init();
+initImageModal();

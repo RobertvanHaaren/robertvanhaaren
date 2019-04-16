@@ -68,6 +68,20 @@
 			max-height: 410px;
 			max-width: 340px;
 			overflow: hidden;
+			border-bottom: none;
+
+			@include main-font;
+			color: $color-base;
+			line-height: $line-height-m;
+			border: none;
+
+			&[data-modal-src] {
+				cursor: pointer;
+			}
+
+			&:focus {
+				outline: none;
+			}
 
 			img {
 				border-radius: 10px;

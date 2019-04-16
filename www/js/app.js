@@ -1,76 +1,47 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
+exports.default = initImageModal;
+function initImageModal() {
+  var modalNode = document.querySelector('.js-image-modal');
+  var modalImageNode = document.querySelector('.js-image-modal__img');
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+  document.addEventListener('click', function (_ref) {
+    var target = _ref.target;
 
-exports.default = {
-	init: function init() {
-		var _this = this;
+    var buttonNode = getButtonNode(target);
+    if (!buttonNode) {
+      modalNode.classList.remove('image-modal--is-visible');
+      return;
+    }
+    var imageSrc = buttonNode.getAttribute('data-modal-src');
+    modalImageNode.src = imageSrc;
+    modalNode.classList.add('image-modal--is-visible');
+  });
 
-		var els = this._els = document.querySelectorAll('[data-onscreen-toggle]');
-
-		if (els.length > 0) {
-			this._checkEls = this._checkEls.bind(this);
-
-			window.addEventListener('load', function () {
-				_this._checkEls();
-				document.addEventListener('scroll', _this._checkEls, false);
-			}, false);
-		}
-	},
-	_checkEls: function _checkEls() {
-		var _this2 = this;
-
-		[].concat(_toConsumableArray(this._els)).forEach(function (el) {
-			//check if element is on screen
-			var onScreen = _this2._isOnScreen(el);
-
-			if (onScreen) {
-				//if element is on screen
-				//add class
-				var addClassName = el.getAttribute('data-onscreen-toggle');
-				el.classList.add(addClassName);
-			}
-		});
-	},
-	_isOnScreen: function _isOnScreen(el) {
-		var win = window;
-
-		//adds an extra offset so the class isn't added
-		//untill its completely in the viewport
-		var extraOffset = el.offsetHeight - el.offsetHeight / 1.5;
-
-		var viewport = {
-			top: win.scrollY,
-			left: win.scrollX
-		};
-		viewport.right = viewport.left + win.innerWidth;
-		viewport.bottom = viewport.top + win.innerHeight;
-
-		var bounds = {
-			top: el.offsetTop + extraOffset,
-			left: el.offsetLeft
-		};
-		bounds.right = bounds.left + el.offsetWidth;
-		bounds.bottom = bounds.top + el.offsetHeight;
-
-		return !(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom);
-	}
-};
+  function getButtonNode(target) {
+    if (target.parentNode.hasAttribute('data-modal-src')) {
+      return target.parentNode;
+    }
+    if (target.parentNode.parentNode.hasAttribute('data-modal-src')) {
+      return target.parentNode.parentNode;
+    }
+    return null;
+  }
+}
 
 },{}],2:[function(require,module,exports){
 'use strict';
 
-var _dataOnScreenToggle = require('./dataOnScreenToggle');
+var _imageModal = require('./image-modal');
 
-var _dataOnScreenToggle2 = _interopRequireDefault(_dataOnScreenToggle);
+var _imageModal2 = _interopRequireDefault(_imageModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_dataOnScreenToggle2.default.init();
+(0, _imageModal2.default)();
 
-},{"./dataOnScreenToggle":1}]},{},[2]);
+},{"./image-modal":1}]},{},[2]);
