@@ -43,3 +43,7 @@
         @content;
     }
 }
+
+@function font-path($font-name, $font-file) {
+    @return '/www/fonts/#{$font-name}/#{$font-file}';
+}
