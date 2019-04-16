@@ -12,6 +12,7 @@
   justify-items: center;
   opacity: 0;
   @include transition(all, $transition-duration--fast);
+  cursor: pointer;
 }
 
 .image-modal--is-visible {
