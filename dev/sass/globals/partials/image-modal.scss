@@ -27,7 +27,7 @@
   margin: 0 auto;
   border-radius: 70px;
   transform: translateY(50px);
-  @include transition(all);
+  @include transition(all, $transition-duration--fast);
 
   .image-modal--is-visible & {
     transform: translateY(0);
