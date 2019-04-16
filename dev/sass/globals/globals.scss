@@ -28,3 +28,39 @@
 .margin-bottom-10 {
 	margin-bottom: 10px !important;
 }
+
+
+a {
+	border-bottom: 1px solid $color-base;
+	color: $color-base; 
+	display: inline;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none; 
+	z-index: 1;
+
+	&:hover {
+		border-bottom: 1px solid $color-accent;
+	}
+
+	&:hover:after, &:focus:after, &:active:after {
+		background: $color-accent;
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
+
+a:after {
+	background: $color-accent;
+	bottom: -2px;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: 0;
+	width: 0;
+	transition-property: width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	z-index: -1;
+}
