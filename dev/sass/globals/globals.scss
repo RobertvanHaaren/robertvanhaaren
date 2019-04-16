@@ -17,6 +17,7 @@
 
 	a:hover {
 		transform: scale(1.03);
+		transform-origin: 50% 50%;
 		transition: all .1s ease-in-out;
 	}
 }
