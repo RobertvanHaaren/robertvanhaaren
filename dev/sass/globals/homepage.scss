@@ -1,37 +1,16 @@
 .transition {
-	-webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-
-    &:hover {
-		-webkit-transition: all 0.3s ease-out;
-	    -moz-transition: all 0.3s ease-out;
-	    -o-transition: all 0.3s ease-out;
-	    transition: all 0.3s ease-out;
-    }
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .transition-opacity {
-	-webkit-transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
-    transition: opacity 0.3s ease-out;
-	
-	&:hover {
-		-webkit-transition: opacity 0.3s ease-out;
-	    -moz-transition: opacity 0.3s ease-out;
-	    -o-transition: opacity 0.3s ease-out;
-	    transition: opacity 0.3s ease-out;
-	}
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
 }
-
-.menu {
-	a {
-		border-bottom: none; 
-	}
-}
-
 
 .recognition {
 	padding: 60px 0 0;

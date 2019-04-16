@@ -10,4 +10,8 @@
     
     display: inline-block;
     text-align: left;
+
+    &:hover {
+        border: $border-style $border-width;
+    }
 }
