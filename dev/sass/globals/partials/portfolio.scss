@@ -1,9 +1,15 @@
 .container.menu2 {
 	padding-bottom: 25px;
+	margin-bottom: 0;
 }
 
 .hero.hero2 {
 	height: 20px;
+	margin-bottom: 80px;
+
+	@include media($max-width: 600px){
+		margin-bottom: 60px;
+	}
 }
 
 .logo-sub {
@@ -13,8 +19,6 @@
 }
 
 .portfolio-area {
-	margin-top: 180px;
-
 	.filters {
 		text-align: center;
 		margin-top: 50px;
@@ -40,7 +44,6 @@
 	}
 
 	h1 {
-		padding-top: 30px;
 		line-height: 0.5em;
 	}
 }

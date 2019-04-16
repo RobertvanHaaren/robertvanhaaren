@@ -1,10 +1,16 @@
 .seymour {
 	position: relative;
+	height: 94px;
+	display: flex;
+  justify-content: flex-end;
+	flex-direction: column;
+	margin-bottom: $spacing-s;
 
 	&__overlay {
 		position: relative;
 		z-index: 1;
 		margin-left: -125px;
+		margin-bottom: 0;
 	}
 
 	&__img {
@@ -12,9 +18,9 @@
 		width: 125px;
 		
 		position: absolute;
-		top: -93%;
+		top: 0;
 		left: 43%;
-    	margin-left: 170px;
+    margin-left: 170px;
 		
 		border-bottom: solid 5px $color-accent;
 		z-index: 1;
