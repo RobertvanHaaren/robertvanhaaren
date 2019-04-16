@@ -29,6 +29,10 @@
 	margin-bottom: 10px !important;
 }
 
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+
 
 a, a.underline {
 	border-bottom: 1px solid $color-base;
@@ -63,4 +67,20 @@ a.underline:after {
 	transition-duration: 0.3s;
 	transition-timing-function: ease-out;
 	z-index: -1;
+}
+
+.quote {
+	display: inline-block;
+	position: relative;
+}
+
+.quote::before {
+	border-right: 3px solid $color-accent;
+	content: ' ';
+	height: calc(100%);
+	left: -15px;
+	padding: 0;
+	position: absolute;
+	width: 2px;
+	z-index: 1;
 }
