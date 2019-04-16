@@ -163,7 +163,23 @@
 		border-radius: 10px;
 	    height: 520px;
 	    margin: 10px;
-	    width: 350px;
+			width: 350px;
+		@include transition(all);
+
+		&.showcase-item--disabled {
+			&:hover {
+				.btn-02 {
+					opacity: 0.75;
+				}
+			}
+		}
+			
+		&:hover {
+			transform: scale(1.01);
+			.btn-02 {
+				opacity: 1;
+			}
+		}
 
 	    img {
 	    	margin-bottom: 0px;
