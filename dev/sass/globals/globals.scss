@@ -30,7 +30,7 @@
 }
 
 
-a {
+a, a.underline {
 	border-bottom: 1px solid $color-base;
 	color: $color-base; 
 	display: inline;
@@ -51,7 +51,7 @@ a {
 	}
 }
 
-a:after {
+a.underline:after {
 	background: $color-accent;
 	bottom: -2px;
 	content: "";
