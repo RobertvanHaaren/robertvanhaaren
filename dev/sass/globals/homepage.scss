@@ -230,6 +230,10 @@
 		background: -ms-linear-gradient(45deg, rgba(161,255,228,1) 0%, rgba(0,222,197,1) 100%);
 		background: linear-gradient(45deg, rgba(161,255,228,1) 0%, rgba(0,222,197,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ffe4', endColorstr='#00dec5', GradientType=1 );
+
+		p {
+			color: #325F55;
+		}
 	}
 
 	.sock-showcase {
@@ -241,5 +245,15 @@
 		background: -ms-linear-gradient(45deg, rgba(155,215,253,1) 0%, rgba(44,232,219,1) 100%);
 		background: linear-gradient(45deg, rgba(155,215,253,1) 0%, rgba(44,232,219,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd7fd', endColorstr='#2ce8db', GradientType=1 );
+
+		p {
+			color:#1E6172;
+		}
+
+		img {
+			margin-top: 40px;
+			margin-bottom: 10px;
+			max-width: 190px;
+		}
 	}
 }
