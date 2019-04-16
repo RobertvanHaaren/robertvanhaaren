@@ -292,13 +292,21 @@
 	.push-top.skillz {
 		padding-top: 4em;
 		padding-bottom: 50px;
+	}
+
+	.container-video iframe {
+    	max-height: 250px;
 	}	
 }
 
 @include media($max-width: 500px){
 	section .row.grid .single-portfolio {
 	    height: 530px;
-	}	
+	}
+
+	.container-video iframe {
+    	max-height: 200px;
+	}		
 }
 
 
