@@ -12,111 +12,97 @@
 	transition: opacity 0.3s ease;
 }
 
-.recognition {
-	padding: 60px 0 0;
+.recognitions {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	height: 121px;
 
-	.recognitions {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: 0 auto;
-		overflow: hidden;
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 100%;
+
+	a {
+		border-bottom: none !important;
+	}
+	
+	.creative-market-logo {
 		padding-top: 10px;
-		text-align: center;
-		max-width: 800px;
-		width: 100%;
+		margin: 0 51px 0 30px;
+		opacity: 0.5;
+		overflow: visible;
+		width: 120px;
 
-		a {
-			border-bottom: none; 
+		&:hover {
+			fill: #8CA853;
+			opacity: 1;
 		}
-		
-		.creative-market-logo {
-			padding-top: 10px;
-			margin: 0 51px 0 30px;
-			opacity: 0.5;
-			overflow: visible;
-			width: 120px;
+	}
 
-			&:hover {
-				fill: #8CA853;
-				opacity: 1;
-			}
-		}
+	.tnw-t500 {
+		margin: 0 30px;
+		opacity: 0.5;
+		width: 100px;
 
-		.tnw-t500 {
-			margin: 0 30px;
-			opacity: 0.5;
-			width: 100px;
-
-			&:hover {
-				fill: #FF4422;
-				opacity: 1;
-			}
+		&:hover {
+			fill: #FF4422;
+			opacity: 1;
 		}
 	}
 }
 
-.clients {
-	padding: 50px 0 100px;
+.client-logo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+	text-align: center;
+	max-width: 800px;
+	width: 100%;
 
 	a {
-		border-bottom: none; 
+		border: none !important;
 	}
 
-	.client-logo {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: 0 auto;
-		overflow: hidden;
+	img {
+		margin: 0 22px;
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.blackdove-logo {
+		padding-top: 28px; 
+		width: 130px;
+	}
+
+	.rtl-logo {
+		padding-top: 20px; 
+		width: 60px;
+	}
+
+	.thyssenkrupp-logo {
+		width: 80px;
+	}
+	
+	.mondelez-logo {
+		padding-top: 22px;
+		width: 100px;
+	}
+	
+	.jlg-logo {
 		padding-top: 20px;
-		text-align: center;
-		max-width: 800px;
-		width: 100%;
-
-		a:hover {
-			border: none;
-		}
-
-		img {
-			margin: 0 22px;
-			opacity: 0.5;
-
-			&:hover {
-				opacity: 1;
-			}
-		}
-
-		.blackdove-logo {
-			padding-top: 28px; 
-			width: 130px;
-		}
-
-		.rtl-logo {
-			padding-top: 20px; 
-			width: 60px;
-		}
-
-		.thyssenkrupp-logo {
-			width: 80px;
-		}
-		
-		.mondelez-logo {
-			padding-top: 22px;
-			width: 100px;
-		}
-		
-		.jlg-logo {
-			padding-top: 20px;
-			width: 80px;
-		}
-		
-		.simyo-logo {
-			padding-top: 18px;
-			width: 80px;
-		}
+		width: 80px;
+	}
+	
+	.simyo-logo {
+		padding-top: 18px;
+		width: 80px;
 	}
 }
 
@@ -177,7 +163,23 @@
 		border-radius: 10px;
 	    height: 520px;
 	    margin: 10px;
-	    width: 350px;
+			width: 350px;
+		@include transition(all);
+
+		&.showcase-item--disabled {
+			&:hover {
+				.btn-02 {
+					opacity: 0.75;
+				}
+			}
+		}
+			
+		&:hover {
+			transform: scale(1.01);
+			.btn-02 {
+				opacity: 1;
+			}
+		}
 
 	    img {
 	    	margin-bottom: 0px;

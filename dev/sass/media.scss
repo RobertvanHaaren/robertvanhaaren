@@ -29,7 +29,6 @@
 	}
 
 	.seymour__img {
-		top: -96%;
 		left: 41%;
 	}
 }
@@ -120,7 +119,6 @@
 	}
 
 	.seymour__img {
-		top: -93%;
 		left: 38%;
 	}
 }
@@ -227,7 +225,6 @@
 	}
 
 	.seymour__img {
-		top: -127%;
 		left: 32%;
 	}
 
@@ -279,7 +276,6 @@
 	}
 
 	.seymour__img {
-		top: -129%;
 		left: 30%;
 	}
 }
@@ -290,7 +286,6 @@
 	}
 
 	.seymour__img {
-		top: -129%;
 		left: 27%;
 	}
 
@@ -325,7 +320,6 @@
 	}
 
 	.seymour__img {
-		top: -129%;
 		left: 28%;
 	}
 
@@ -339,16 +333,19 @@
 }
 
 @include media($max-width: 430px){
+	.seymour {
+		display: block;
+	}
+
 	.seymour__overlay {
-		margin-left: 0em;
-		margin-bottom: 97px;
+		margin-left: 0;
 	}
 
 	.seymour__img {
 		border: none;
-    	left: 20%;
-    	margin-left: 40px;
-    	margin-top: 110px;
+    left: 20%;
+    margin-left: 40px;
+    margin-top: 40px;
 		z-index: 1;
 	}
 
@@ -436,7 +433,6 @@
 	}
 
 	.seymour__img {
-		top: 147px;
     	left: 23.5%;
 	}
 

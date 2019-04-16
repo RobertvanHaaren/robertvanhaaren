@@ -5,7 +5,7 @@
 		<nav class="menu">
 			<a class="menu-item transition" href="/">Home</a>
 			<%- partial('_inc/logo') %>
-			<a class="menu-item transition" href="/portfolio.html">Portfolio</a>
+			<a class="menu-item transition" href="/work">Work</a>
 		</nav>
 		<div class="container">
 			<h2 class="h--no-spacing">Robert van Haaren</h2>
@@ -19,47 +19,23 @@
 </section>
 
 <div class="container">
-	<div class="text-center push-top skillz">
-		<h4><u>Skills</u></h4>
-		<div class="skills-container">
-	        <span class="skills">UI / UX</span>
-	        <span class="skills">Branding</span>
-	        <span class="skills">QA testing</span>
-	        <span class="skills">Sketch</span>
-	        <span class="skills">Photoshop</span>
-	        <span class="skills">After Effects</span>
-	        <span class="skills">HTML/Jade</span>
-	        <span class="skills">CSS/SCSS</span>
-	        <span class="skills">Design</span>
-	        <span class="skills">PM</span>
-	        <span class="skills">Illustrator</span>
-	        <span class="skills">Invision</span>
-			<span class="skills">Zeplin</span>
-			<span class="skills">ENFJ-A</span>
-	    </div>
+	<div class="text-center push-top">
+		<h4><u>Created Products For</u></h4>
+		<div class="client-logo">
+			<a href="https://angel.co/blackdove" target="_blank"><img class="blackdove-logo transition-opacity" src="www/img/logo/blackdove-logo.svg" alt=""></a>
+			<a href="https://en.wikipedia.org/wiki/RTL_Nederland" target="_blank"><img class="rtl-logo transition-opacity" src="www/img/logo/rtl-logo.svg" alt=""></a>
+			<a href="https://en.wikipedia.org/wiki/ThyssenKrupp" target="_blank"><img class="thyssenkrupp-logo transition-opacity" src="www/img/logo/thyssenkrupp-logo.svg" alt=""></a>
+			<a href="https://en.wikipedia.org/wiki/Mondelez_International" target="_blank"><img class="mondelez-logo transition-opacity" src="www/img/logo/mondelez-logo.svg" alt=""></a>
+			<a href="https://en.wikipedia.org/wiki/JLG_Industries" target="_blank"><img class="jlg-logo transition-opacity" src="www/img/logo/jlg-logo.svg" alt=""></a>
+			<a href="https://en.wikipedia.org/wiki/Simyo" target="_blank"><img class="simyo-logo transition-opacity" src="www/img/logo/simyo-logo.svg" alt=""></a>
+		</div>
 	</div>
 </div>
 
 <div class="container">
 	<div class="text-center push-top">
 		<h4><u>Case Studies</u></h4>
-		<div class="showcase">
-            <a class="showcase-item blackdove-showcase" href="/projects/blackdove">
-            	<img src="/www/img/showcase/logo-blackdove.svg" alt="Blackdove logo">
-            	<p>Blackdove is a digital art platform featuring a vast, growing collection of cutting-edge art by the world’s best artists. I've worked for this company for the past 3 years.</p>
-            	<span href="/portfolio.html" class="btn-02 transition" title="Check out my full portfolio">Continue reading</span>
-            </a>
-            <a class="showcase-item donny-showcase" href="/portfolio.html">
-            	<img src="/www/img/showcase/logo-donny.svg" alt="Donny fund logo">
-            	<p>Donny is a crowdfunding for software platform. It’s founded by me and my colleague Matti. It’s a concept to get funding by your community and get feedback from your user-base.</p>
-            	<span href="/portfolio.html" class="btn-02 transition" title="Check out my full portfolio">Continue reading</span>
-            </a>
-            <a class="showcase-item sock-showcase" href="/portfolio.html">
-            	<img src="/www/img/showcase/logo-sock.svg" alt="Sock secure lock logo">
-            	<p>This React Native app let's you save your images securly on your mobile phone. It has been developed by my colleague Matti and designed by me. We published this app recently.</p>
-            	<span href="/portfolio.html" class="btn-02 transition" title="Check out my full portfolio">Continue reading</span>
-            </a>
-        </div>
+		<%- partial('_inc/showcase') %>
 	</div>
 </div>
 
@@ -81,91 +57,45 @@
 
 <div class="container">
 	<div class="text-center push-top">
-		<div class="clients">
-			<h4>Created <u>Products</u> For</h4>
-			<div class="client-logo">
-				<a href="https://angel.co/blackdove" target="_blank"><img class="blackdove-logo transition-opacity" src="www/img/logo/blackdove-logo.svg" alt=""></a>
-				<a href="https://en.wikipedia.org/wiki/RTL_Nederland" target="_blank"><img class="rtl-logo transition-opacity" src="www/img/logo/rtl-logo.svg" alt=""></a>
-				<a href="https://en.wikipedia.org/wiki/ThyssenKrupp" target="_blank"><img class="thyssenkrupp-logo transition-opacity" src="www/img/logo/thyssenkrupp-logo.svg" alt=""></a>
-				<a href="https://en.wikipedia.org/wiki/Mondelez_International" target="_blank"><img class="mondelez-logo transition-opacity" src="www/img/logo/mondelez-logo.svg" alt=""></a>
-				<a href="https://en.wikipedia.org/wiki/JLG_Industries" target="_blank"><img class="jlg-logo transition-opacity" src="www/img/logo/jlg-logo.svg" alt=""></a>
-				<a href="https://en.wikipedia.org/wiki/Simyo" target="_blank"><img class="simyo-logo transition-opacity" src="www/img/logo/simyo-logo.svg" alt=""></a>
-			</div>
-		</div>
+		<h4><u>Skills</u></h4>
+		<div class="skills-container">
+	        <span class="skills">UI / UX</span>
+	        <span class="skills">Branding</span>
+	        <span class="skills">QA testing</span>
+	        <span class="skills">Sketch</span>
+	        <span class="skills">Photoshop</span>
+	        <span class="skills">After Effects</span>
+	        <span class="skills">HTML/Jade</span>
+	        <span class="skills">CSS/SCSS</span>
+	        <span class="skills">Design</span>
+	        <span class="skills">PM</span>
+	        <span class="skills">Illustrator</span>
+	        <span class="skills">Invision</span>
+			<span class="skills">Zeplin</span>
+			<span class="skills">ENFJ-A</span>
+	    </div>
 	</div>
 </div>
 
-<!-- Old sections
-<%- partial('_inc/feature', {
-		deviceType: 'iphone-vertical',
-		imgs: ['iphone-blackdove-01.png', 'iphone-blackdove-02.png'],
-		title: 'Blackdove',
-		subTitle: 'Bringing Motion Art To Every Home',
-		desc: 'Blackdove is a digital art platform featuring a vast, growing collection of cutting-edge works by the world’s most innovative artists. Instantly enjoy a dynamic art experience on our own Samsung Canvas or via media players including Apple TV, Chromecast, Roku and Amazon Fire TV.',
-		from: 'February 2016',
-		to: 'Present',
-		category: 'Brand, UX & Interaction Design',
-		slug: 'blackdove',
-		reversed: false
-	}) %>
+<div class="push-top">
+	<div class="container">
+		<div class="text-center">
+			<div class="seymour">
+				<h4 class="seymour__overlay">Wanna <u>see more?</u></h4>
+				<div ontouchstart class="seymour__img"></div>
+			</div>
 
-<%- partial('_inc/feature', {
-		deviceType: 'laptop',
-		imgs: ['macbooks01-calcium.png', 'macbooks02-calcium.png'],
-		title: 'Calcium',
-		subTitle: 'Making conversion optimization simple',
-		desc: 'Last year WeLikeMilk came to me with the idea to create a custom CMS completely focused on optimizing a website\'s conversion rates for use with their clients. Together with their team I created just that: A CMS with a great UX that helps their clients gain more insight in how to optimize conversion rates.',
-		from: 'May 2015',
-		to: 'July 2015',
-		category: 'UX & Interaction Design',
-		slug: 'calcium',
-		reversed: true,
-	}) %>
-
-<%- partial('_inc/feature', {
-		deviceType: 'ipad',
-		imgs: ['ipad-welikemilk.png'],
-		title: 'WeLikeMilk.nl',
-		subTitle: 'Result by relevance',
-		desc: 'WeLikeMilk is an Amsterdam based agency specialized in marketing. They help big clients like Achmea, Simyo, KPN en Thuiscomfort to optimize their conversion rates.',
-		from: 'Februari 2015',
-		to: 'April 2015',
-		category: 'UX & Interaction Design',
-		slug: 'welikemilk',
-		reversed: false
-	}) %>
-
-<%- partial('_inc/feature', {
-		deviceType: 'iphone',
-		imgs: ['iphone-duxelo.png', 'iphone-duxelo02.png'],
-		title: 'Duxelo',
-		subTitle: 'Everything a student needs',
-		desc: 'Duxelo is a project by a young Amsterdam based startup called Duxilio. An app that gives a student everything he or she could possibly need during a school day. It\'s a combination of systems that are already being used by the school, new features from our building bucket and tailor made features all in one mobile application for Android and iOS.',
-		from: 'November 2015',
-		to: 'December 2015',
-		category: 'UX & Interaction Design',
-		slug: 'duxelo',
-		reversed: true
-	}) %>
--->
-
-<div class="container">
-	<div class="text-center push-top">
-		<div class="seymour">
-			<h4 class="seymour__overlay">Wanna <u>see more?</u></h4>
-			<div ontouchstart class="seymour__img"></div>
+			<div class="container">
+				<div class="text-center">
+					<div class="see-more">
+									<a class="linkies" target="_blank" href="https://play.google.com/store/apps/details?id=com.duxilio.sock"><img src="www/img/projects/sock/project34-sock.jpg" alt="Sock App"></a>
+									<a class="linkies" target="_blank" href="https://www.yourproductions.nl/"><img src="www/img/projects/yourproductions/project02-yourproductions.jpg" alt="yourproductions"></a>
+									<a class="linkies" target="_blank" href="https://duxilio.com"><img src="www/img/projects/donny.fund/project16-donny.fund.jpg" alt="duxilio"></a>
+							</div>
+						</div>
+				</div>
+			<a href="/work.html" class="btn btn--big transition" title="Check out my full portfolio">Show me more work</a>
 		</div>
-
-		<div class="container">
-			<div class="text-center">
-				<div class="see-more">
-		            <a class="linkies" target="_blank" href="https://play.google.com/store/apps/details?id=com.duxilio.sock"><img src="www/img/projects/sock/project34-sock.jpg" alt="Sock App"></a>
-		            <a class="linkies" target="_blank" href="https://www.yourproductions.nl/"><img src="www/img/projects/yourproductions/project02-yourproductions.jpg" alt="yourproductions"></a>
-		            <a class="linkies" target="_blank" href="https://duxilio.com"><img src="www/img/projects/donny.fund/project16-donny.fund.jpg" alt="duxilio"></a>
-		        </div>
-	        </div>
-	    </div>
-		<a href="/portfolio.html" class="btn btn--big transition" title="Check out my full portfolio">Show me more work</a>
 	</div>
 </div>
 
