@@ -5,32 +5,6 @@
 		slug: 'blackdove'
 	}) %>
 
-<script>
-if ('loading' in HTMLImageElement.prototype) { 
-  for (const image of document.images) {
-    if (image.hasAttribute('data-src')) {
-      image.src = image.getAttribute('src');
-    }
-  }
-} else {
-  const images = document.querySelectorAll('[loading="lazy"]');
-  const observer = new IntersectionObserver((entries) => {
-    for (const {intersectionRatio, target} of entries) {
-      if (intersectionRatio <= 0) {
-        continue;
-      }
-      observer.unobserve(target, {
-        threshold: [0, 0.2, 0.5, 1],
-      });
-      target.src = target.getAttribute('data-src');
-    }
-  });
-  images.forEach(image => {
-    observer.observe(image);
-  });
-}
-</script>
-
 <div class="container container--text container--push-top">
 	<h3 class="feature__sub-title h--weight-light margin-bottom-10">Bringing Motion Art To Every Home</h3>
 	<p>Brand & Design / February 2016 - March 2019</p>
