@@ -23,7 +23,7 @@
 
 .slick-slide {
   transition: all ease-in-out .3s;
-  opacity: .2;
+  opacity: .8;
 }
 
 .slick-active {
@@ -36,12 +36,23 @@
 
 .slickin-slide {
 	margin-top: 30px;
+
+	* { 
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    }
 }
 
 .slick-list {
 	img {
 		border-radius: 10px;
-		max-height: 600px;
+		max-height: 580px;
+		margin-bottom: 10px;
 		width: auto;
 	}
 }
@@ -53,18 +64,29 @@ button.slick-prev, button.slick-next {
 	transform: translate(0, 0%);
 }
 
+section .slick-dots li.slick-active button:before {
+	color: black;
+	opacity: 1;
+}
+
+button.slick-next:hover:before, button.slick-prev:hover:before {
+    color: $color-accent;
+}
+
 button.slick-prev, {
-	margin-left: -20px;
+	margin-left: -40px;
 }
 
 button.slick-next {
-	margin-right: -20px;
+	margin-right: -40px;
 }
 
 button.slick-prev:before, button.slick-next:before {
-	color: red;
+	color: black;
+	font-size: 35px;
 }
 
 ul.slick-dots li button:before {
 	font-size: 25px;
+	margin-top: 10px;
 }
