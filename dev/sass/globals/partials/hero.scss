@@ -6,8 +6,6 @@
 	height: 650px;
 	display: table;
 
-	margin-bottom: $spacing-xxl;
-
 	@media all and (max-height: 1170px){
 		margin-bottom: 0;
 	}
