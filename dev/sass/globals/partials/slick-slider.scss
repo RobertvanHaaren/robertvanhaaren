@@ -42,14 +42,14 @@
 .slick-list {
 	img {
 		border-radius: 10px;
-		max-height: 580px;
+		max-height: 570px;
 		margin-bottom: 10px;
 		width: auto;
 	}
 }
 
 button.slick-prev, button.slick-next {
-	bottom: -10%;
+	bottom: -15%;
 	left: 50%;
 	top: initial;
 	transform: translate(0, 0%);
@@ -65,11 +65,15 @@ button.slick-next:hover:before, button.slick-prev:hover:before {
 }
 
 button.slick-prev, {
-	margin-left: -40px;
+	margin-left: -50px;
+	width: 40px;
+	height: 40px;
 }
 
 button.slick-next {
-	margin-right: -40px;
+	margin-right: -50px;
+	width: 40px;
+	height: 40px;
 }
 
 button.slick-prev:before, button.slick-next:before {
