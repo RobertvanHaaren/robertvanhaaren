@@ -22,9 +22,10 @@
 
 
 .slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .8;
-  outline: none;
+	cursor: grab;
+	transition: all ease-in-out .3s;
+	opacity: .8;
+	outline: none;
 }
 
 .slick-active {
@@ -46,7 +47,7 @@
 	    position: absolute;
 	    width: 100%;
 	    background-color: #ededed;
-	    height: 80%;
+	    height: 92%;
 	    left: 0;
 	    bottom: 0;
 	    z-index: -1;
