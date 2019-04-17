@@ -36,7 +36,21 @@
 }
 
 .slickin-slide {
+	margin-bottom: 50px;
+	padding-bottom: 130px;
 	margin-top: 30px;
+	z-index: 2;
+
+	&::after {
+	    content: "";
+	    position: absolute;
+	    width: 100%;
+	    background-color: #ededed;
+	    height: 80%;
+	    left: 0;
+	    bottom: 0;
+	    z-index: -1;
+	}
 }
 
 .slick-list {
@@ -49,7 +63,7 @@
 }
 
 button.slick-prev, button.slick-next {
-	bottom: -15%;
+	bottom: 5%;
 	left: 50%;
 	top: initial;
 	transform: translate(0, 0%);
@@ -81,7 +95,12 @@ button.slick-prev:before, button.slick-next:before {
 	font-size: 35px;
 }
 
-ul.slick-dots li button:before {
-	font-size: 25px;
-	margin-top: 10px;
+ul.slick-dots {
+	background-color: #ededed;
+	margin-bottom: 120px; 
+
+	li button:before {
+		font-size: 25px;
+		margin-top: 10px;
+	}
 }
