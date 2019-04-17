@@ -23,9 +23,9 @@
 .image-modal__img {
   width: 100%;
   max-width: 800px;
-  padding: $spacing-xl;
+  padding: $spacing-s;
   margin: 0 auto;
-  border-radius: 70px;
+  border-radius: 4%;
   transform: translateY(50px);
   @include transition(all, $transition-duration--fast);
 
