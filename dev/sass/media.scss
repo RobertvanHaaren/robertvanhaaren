@@ -319,6 +319,14 @@
 	button.slick-prev, button.slick-next {
 		bottom: 7%;
 	}
+
+	.recognitions {
+		height: auto;
+		
+		a {
+			margin-top: 20px;
+		}
+	}
 }
 
 @include media($max-width: 500px){
