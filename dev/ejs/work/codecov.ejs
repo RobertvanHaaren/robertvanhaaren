@@ -1,0 +1,370 @@
+<%- partial('../_inc/project/layout/header', {
+		title: 'Codecov',
+		description: 'Improve code stability without sacrificing speed',
+		img: 'https://robertvanhaaren.com/www/img/bd-promo.jpg',
+		slug: 'codecov',
+		noIndex: true
+	}) %>
+
+<div class="container container--text container--push-top">
+	<h1 class="h--no-spacing"><u>A</u>bout Codecov</h1>
+	<h4 class="feature__sub-title h--weight-light">Ship healthier code faster with less risk.</h4>
+
+	<p class="p--big">
+		Codecov gives companies actionable coverage insights when and where they need them to ensure they are shipping quality code. With everything from doorbells to rockets running on code, it's more important than ever to ensure quality code is being delivered with every release.
+	</p>
+
+	<p class="p--push">Product UI, UX, Brand and Marketing Design / June 2019 - June 2022 / Company size: 50 <br /> San Fransisco (CA) US. <a class="underline" href="https://codecov.io" target="_blank">codecov.io</a></p>
+
+	<%- partial('../_inc/project/video-banner', {
+			iframeSrc: 'https://www.youtube.com/embed/wwFookaYHoo'
+		}) %>
+
+	<h4 class="feature__sub-title h--weight-light push-top--small">My Role at Codecov</h4>
+	<p class="p--big">
+	Around June 2019 Codecov had asked me to help them rethink their Product pages. When I joined Codecov at that time the team was consisting out of 10-15 people, 3 years later it had grown to over 50 people. 
+	</p>
+	<p class="p--big">
+	The first 1.5 years at Codecov I've worked closely with their CTO Eli Hooten. The entire product needed a design overhaul. The product needed a closer look with research, competitor comparison, deciding what is important (and what isn't). We really needed to understand the product and how our users are using and experiencing it to iterate and increase its value.
+	</p>
+
+	<h4 class="feature__sub-title h--weight-light push-top--small">Accessibility (color blindness)</h4>
+	<p class="p--big">
+	When digging into our user feedback (support tickets, twitter, etc) it became clear we had <a class="underline" href="https://www.getfeedback.com/resources/ux/how-to-design-for-color-blindness/" target="_blank">color blind users</a> that were struggeling with understanding sunbursts, graphs, etc because we indicate a lot with color inside our portal. Roughly 4-8% of the visitors that visit a website or app are colorblind. To accomendate the same experience for all our users I started experimenting with different colors and converting them to "colorblind colors" and discussing them with the team. We reduced the amount of colors, we picked the colors that would look great for color blind and non color blind user and applied them to the portal.
+	</p>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small h--no-spacing">Color blindness</h4>
+		<p>Experimenting/Decision making process</p>
+	</div>
+
+</div>
+
+	<section class="slickin-slide">
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/1.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/2.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/3.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/4.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/5.png">
+	    </div>
+	   	<div>
+	      <img src="/../www/img/projects/codecov/color-blindness/6.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/7.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/color-blindness/8.png">
+	    </div>
+	</section>
+
+<div class="container container--text">
+	<div class="text-center" style="margin-top: 30px;">
+		<a href="/../www/img/projects/codecov/color-blindness/9.pdf" class="btn btn--big" target="_blank">
+			View document
+		</a>
+	</div>
+	<br /><br />
+	<h4 class="feature__sub-title h--weight-light push-top--small">User Experience</h4>
+	<p class="p--big">
+	The first thing I started doing when I joined Codecov was walking through the entire product and catch the most obvious UX flaws. For instance Codecov's top navigation bar which behaved like <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" title="" class="underline">breadcrumbs</a> but visually looked like it was just a normal functioning navigation bar (meaning that when you clicked on a menu item it would take you to a different page and the menu would always stay/look the same). Since this is unexpected behavior to a user they might get confused, since they expect it working like a normal functioning navigation bar because so many other websites do it this way <a href="https://lawsofux.com/jakobs-law/" target="_blank" class="underline">(Jakob's Law)</a>. I came up with a navigation bar design with interactions to solve this problem:</p>
+
+	<section class="slickin-slide">
+	    <div>
+	      <video width="960" height="720" controls>
+  			<source src="/../www/img/projects/codecov/interactions/compare-page.mp4" type="video/mp4">
+  		</video>
+	    </div>
+	</section>
+
+	<div class="text-center" style="margin-top: 30px;">
+		<a href="/../www/img/projects/codecov/top-nav/top-nav.pdf" class="btn btn--big" target="_blank">
+			Functional Spec
+		</a>
+	</div>
+
+	<p class="p--big">
+	By adding chevrons to the top bar it's now indicating it are breadcrumbs, and by adding subtle animations the user can now visually see what is changing. By adding a hover over the breadcrumbs the user can easily select a different organisation, repository, etc and change the breadcrumb path for a better understanding how everything ties together. This is one of the UX items I worked on as an example.
+	</p>
+
+	<p class="p--big">
+	<strong>Analyse</strong> Receiving user data is important, that's why we used <a href="https://www.fullstory.com/" class="underline" target="_blank">Fullstory</a> to track how users are experiencing Codecov's product. This enabled us to see rage-clicks, deadlinks, heatmaps, movements, user session recordings, etc. This would also mean we could compare with newer versions and see if it resolves the issue, increases value, hit our <a target="_blank" class="underline" href="https://www.klipfolio.com/resources/articles/what-is-a-key-performance-indicator">success metrics</a> and targets <a href="https://vwo.com/ab-testing/" class="underline" target="_blank">(a/b test)</a>.
+	</p>
+	<p class="p--big">
+	<strong>User interviews</strong> Watching recorded user feedback sessions and attending them helped us understand things like: why are our users using us?, what do they like about our product? and what do they not understand or don't like? / find confusing? Seeing a user use your product and see them e.g. struggeling on certain pages helped us creating a better experience for our users. 
+	</p>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small h--no-spacing">Product Designs</h4>
+		<p>Entire dashboard/portal redesign and interactions</p>
+	</div>
+
+	<section class="slickin-slide">
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/1.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/2.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/3.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/4.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/5.png">
+	    </div>
+	   	<div>
+	      <img src="/../www/img/projects/codecov/product/6.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/7.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/product/8.png">
+	    </div>
+	    <div>
+	     	<video width="960" height="720" controls>
+  				<source src="/../www/img/projects/codecov/interactions/1.mp4" type="video/mp4">
+  			</video>
+  		</div>
+  		<div>
+	  		 <video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/2.0.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/2.1.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/2.2.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/2.3.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/2.4.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/3.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/4.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/5.mp4" type="video/mp4">
+	  		</video>
+	  	</div>
+	  	<div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/6.mp4" type="video/mp4">
+	  		</video>
+	    </div>
+	    <div>
+	  		<video width="960" height="720" controls>
+	  			<source src="/../www/img/projects/codecov/interactions/7.mp4" type="video/mp4">
+	  		</video>
+	    </div>
+	</section>
+
+	<h4 class="feature__sub-title h--weight-light push-top--small">Agile, Okr's, User stories and more</h4>
+	<p class="p--big">
+	At Codecov we worked with the agile scrum methodology (sprints, user stories, roles stakeholders). We've worked with quarterly OKR's to track progress, create alignment, and encourage engagement around measurable goals. This way everyone on each team will get aligned with longer terms company objectives.</p>
+
+	<div class="text-center" style="margin-top: 30px;">
+		<a href="/../www/img/projects/codecov/product-spec.pdf" class="btn btn--big" target="_blank">
+			Product spec example
+		</a>
+	</div>
+</div>
+
+
+<div class="story">
+	<div class="container">
+		<%- partial('../_inc/project/img', {
+				src: '../www/img/projects/blackdove/01.blackdove-brand-01.jpg',
+				alt: ''
+			}) %>
+	</div>
+
+	<%- partial('../_inc/project/quote-banner', {
+		quote: 'Robert is a strong designer, with a keen eye for graphic design and consistent brand aesthetic. He was instrumental in bringing our public-facing assets (home page, web app, etc.) to the modern era. I"ve already introduced Robert to many companies in similar need and he"s been widely impactful and positively reviewed at those companies as well.',
+		cite: '<a href="https://www.linkedin.com/in/jerrodengelberg/" target="_blank">Jerrod Engelberg</a>, CEO @Codecov'
+	}) %>
+
+	<div class="container">
+		<%- partial('../_inc/project/img', {
+			src: '../www/img/projects/blackdove/01.blackdove-brand-08.gif',
+			alt: ''
+		}) %>
+	</div>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small">Marketing Team</h4>
+		<p class="p--big">
+		When the marketing team was taking shape I was asked to help them for the last year and a half when I was working at Codecov. My new task would be redesigning the entire brand. This meant, colors, fonts, icons, illustrations, marketing pages, blog headers, email designs, events, booth designs, sales/investor presentations designs, reusable elements, templates, documentation graphics, , video editing, etc. </p>
+		<p class="p--big">
+		My focus shifted from making the product funcional, usable, simple, seamless, etc for our users to selling this product to potential users, by helping them understand what we do, why we do it, what value it can bring them.</p>
+	</div>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small">Icons and logo tiles</h4>
+		<p class="p--big">
+		When the marketing team was taking shape I was asked to help them for the last year and a half when I was working at Codecov. My new task would be redesigning the entire brand. This meant, colors, fonts, icons, illustrations, marketing pages, blog headers, email designs, events, booth designs, sales/investor presentations designs, reusable elements, templates, documentation graphics, , video editing, etc. </p>
+		<p class="p--big">
+		My focus shifted from making the product funcional, usable, simple, seamless, etc for our users to selling this product to potential users, by helping them understand what we do, why we do it, what value it can bring them.</p>
+	</div>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small h--no-spacing">Icons and logo tiles</h4>
+		<p>Selection of reusable icons, logos, illustrations</p>
+	</div>
+
+	<section class="slickin-slide">
+	    <div>
+	      <img src="/../www/img/projects/codecov/icons/1..png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/icons/2..png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/icons/3..png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/icons/4..png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/icons/5..png">
+	    </div>
+	</section>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small h--no-spacing">Marketing website</h4>
+		<p>Selection of pages</p>
+	</div>
+
+	<section class="slickin-slide">
+	    <div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/1.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/2.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/3.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/4.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/5.png">
+	    </div>
+	   	<div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/6.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/marketing-pages/7.png">
+	    </div>
+	</section>
+
+	<div class="container container--text">
+		<h4 class="feature__sub-title h--weight-light push-top--small h--no-spacing">Blog posts</h4>
+		<p>Selection of blog posts</p>
+	</div>
+
+	<section class="slickin-slide">
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/1.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/2.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/3.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/4.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/5.png">
+	    </div>
+	     <div>
+	      <img src="/../www/img/projects/codecov/blog/6.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/7.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/8.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/9.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/10.png">
+	    </div>
+	    <div>
+	      <img src="/../www/img/projects/codecov/blog/11.png">
+	    </div>
+	</section>
+
+	<%- partial('../_inc/project/quote-banner', {
+	quote: 'Robert and I worked very closely together while at Codecov. He crafted the Codecov brand from the ground up and was responsible for everything from website designs and motion graphics to physical assets like tradeshow booths and brochures. He is an incredibly versatile, skilled, and collaborative designer who takes the time to understand complex ideas, distill them down to their essence, and deliver incredibly well-conceived final designs. I would love the chance to work with Robert again in the future.',
+	cite: '<a href="https://www.linkedin.com/in/jonblumenfeld/" target="_blank">Jon Blumenfeld</a>, Vice President Marketing @Codecov'
+	}) %>
+
+	<div class="container">
+		<div class="text-center push-top--medium">
+			<div class="seymour">
+				<h4 class="seymour__overlay">Wanna <u>see more?</u></h4>
+				<div ontouchstart class="seymour__img"></div>
+			</div>
+			<%- partial('../_inc/showcase') %>
+			<div class="text-center" style="margin-top: 30px;">
+				<a href="/work" class="btn btn--big">
+					Back to overview
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/../www/js/work/jquery-2.2.4.min.js"></script>
+  <script src="/../www/js/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+		$('.slickin-slide').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  centerMode: true,
+		  variableWidth: true
+		});
+    });
+</script>
+
+<%- partial('../_inc/layout/footer') %>
