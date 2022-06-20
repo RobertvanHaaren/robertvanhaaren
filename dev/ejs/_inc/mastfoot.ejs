@@ -23,10 +23,10 @@
 
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
 <script>
-if ('loading' in HTMLImageElement.prototype) { 
+if ('loading' in HTMLImageElement.prototype) {
   for (const image of document.images) {
     if (image.hasAttribute('data-src')) {
-      image.src = image.getAttribute('src');
+      image.src = image.getAttribute('data-src');
     }
   }
 } else {
