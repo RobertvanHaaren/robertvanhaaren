@@ -9,7 +9,8 @@ const gulp = require('gulp'),
       htmlmin = require('gulp-htmlmin'),
       uglify = require('gulp-uglify'),
       source = require('vinyl-source-stream'),
-      buffer = require('vinyl-buffer');
+      buffer = require('vinyl-buffer'),
+      modRewrite = require('connect-modrewrite');
 
 var pkg = require('./package.json'),
     rootPaths = {
@@ -42,7 +43,14 @@ gulp.task('connect', function(){
         livereload: true,
         host: '0.0.0.0',
         port: 9000,
-        root: './'
+        root: './',
+	middleware: function() {
+          return [
+            modRewrite([
+              '^/(.*)$ http://localhost:9000/$1.html [P]'
+            ])
+          ];
+        }
     });
 });
 
