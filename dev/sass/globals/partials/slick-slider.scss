@@ -33,7 +33,7 @@
 }
 
 .slick-active {
-  opacity: .5;
+  opacity: 1;
 }
 
 .slick-current {
@@ -59,6 +59,8 @@
 }
 
 .slick-list {
+	margin-bottom: 20px;
+
 	img {
 		border-radius: 10px;
 		max-height: 570px;
@@ -68,44 +70,57 @@
 }
 
 button.slick-prev, button.slick-next {
-	bottom: 5%;
+	background-color: black;
+	bottom: 4%;
+	border-radius: 50%;
 	left: 50%;
 	top: initial;
 	transform: translate(0, 0%);
 }
 
 section .slick-dots li.slick-active button:before {
-	color: black;
 	opacity: 1;
 }
 
 button.slick-next:hover:before, button.slick-prev:hover:before {
-    color: $color-accent;
+    background-color: $color-accent;
+    border-radius: 50%;
+    color: black;
+    padding: 8px;
+    transition: 0.1s;
+}
+
+button.slick-prev:hover, button.slick-prev:focus, button.slick-next:hover, button.slick-next:focus {
+	color: $color-accent;
+	background-color: black;
+	transition: 0.1s;
 }
 
 button.slick-prev, {
-	margin-left: -50px;
-	width: 40px;
-	height: 40px;
+	margin-top: 10px;
+	margin-left: -60px;
+	width: 50px;
+	height: 50px;
 }
 
 button.slick-next {
-	margin-right: -50px;
-	width: 40px;
-	height: 40px;
+	margin-top: 10px;
+	margin-right: -60px;
+	width: 50px;
+	height: 50px;
 }
 
 button.slick-prev:before, button.slick-next:before {
-	color: black;
+	color: $color-accent;
 	font-size: 35px;
+	transition: 0.1s;
 }
 
 ul.slick-dots {
-	background-color: #ededed;
-	margin-bottom: 120px; 
+	margin-bottom: 134px; 
 
 	li button:before {
-		font-size: 25px;
+		font-size: 30px;
 		margin-top: 10px;
 	}
 }
