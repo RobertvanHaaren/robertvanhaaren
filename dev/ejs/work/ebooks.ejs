@@ -1,0 +1,92 @@
+<%- partial('../_inc/project/layout/header', {
+		title: 'Codecov use-case',
+		description: 'Marketecture Diagram',
+		img: 'https://robertvanhaaren.com/www/img/codecov-promo.jpg',
+		slug: 'codecov',
+		noIndex: true
+	}) %>
+
+<div class="container container--text container--push-top">
+	<h1 class="h--no-spacing"><u>E</u>books</h1>
+	<h4 class="feature__sub-title h--weight-light">Design/Interaction</h4>
+
+	<h4 class="feature__sub-title h--weight-light push-top--small">Use-case 5:</h4>
+	<p class="p--big">
+	<strong>Goal/need:</strong> Create marketing ebooks to educate, help, inform our (potential) users. The ebooks will be placed on the Codecov website. Each Chapter will have its own illustration to help support the copy of the book. There will be more ebooks created over time by different Codecov employees. 
+	</p>
+	<p class="p--big">Since there will be more ebooks coming out it will be important to keep the pages modulair. </p>
+	<p class="p--big">At that time we were slowly moving our branding and design to <a href="https://penji.co/isometric-design/" class="underline" target="_blank">isometric design</a>, as well for this project.</p>
+	<p class="p--big">Below the flowchart designs and a design for language/Ci/CD tiles to visualize how the animation would look like:</p>
+</div>
+
+<section class="slickin-slide">
+	<div>
+    <img src="/../www/img/projects/codecov/marketecture/3.jpg" data-src="/../www/img/projects/codecov/marketecture/3.jpg">
+  </div>
+  <div>
+    <img src="/../www/img/projects/codecov/marketecture/1.png" data-src="/../www/img/projects/codecov/marketecture/1.png">
+  </div>
+  <div>
+    <img src="/../www/img/projects/codecov/marketecture/2.png" data-src="/../www/img/projects/codecov/marketecture/2.png">
+  </div>
+</section>
+
+<div class="container container--text container--push-top">
+	<p class="p--big"><strong>Animation:</strong> I suggested we should use <a href="https://airbnb.design/lottie/" target="_blank" class="underline">Airbnb's</a> animation library called <a href="https://lottiefiles.com/" target="_blank" class="underline">Lottie</a>. Using <a href="https://github.com/airbnb/lottie-web" target="_blank" class="underline">Bodymovin</a> (an After Effects plugin) I was able to export my animations from After Effects to a .json file which the developers could then import into the website. Lottie allows for complex animation state management which allowed us to create different animations for different component states.</p>
+	<p class="p--big">
+	I exported different .json files that would be connected and layed on top of eachother. The animation layers would start e.g. at a certain click in a dropdown or after a user hits the webpage etc. When our users completed their selection for the flowchart they can send the flowchart to their email adress. See the live example here: <a href="https://about.codecov.io/diagram/" target="_blank" class="underline">Marketecture Codecov</a>. See a selection of the animations below:</p>
+    <div>
+     	<video width="960" height="720" controls>
+				<source src="/../www/img/projects/codecov/marketecture/codecov.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div>
+  		 <video width="960" height="720" controls>
+  			<source src="/../www/img/projects/codecov/marketecture/diagram-lines.mp4" type="video/mp4">
+  		</video>
+  	</div>
+  	<div class="text-center" style="margin-top: 30px;">
+		<a href="https://about.codecov.io/diagram/" target="_blank" class="btn btn--big">
+			Marketecture live
+		</a>
+	</div>
+	<br /><br />
+	<div class="menu-content col-lg-10">
+		<div class="title text-center">
+      <h4><u>Another use-case</u></h4>
+		</div>
+	</div>
+	<div class="showcase showcase-usecase">
+	  <a class="showcase-item codecov-showcase" href="/work/ux">
+	    <p class="use-case-title"><strong>Use-case 2:</strong></p> 
+		<p>UX Top Navigation bar</p>
+	    <span class="btn-02 transition">Start Reading</span>
+	  </a>
+	</div>
+	<div class="text-center" style="margin-top: 30px;">
+		<a href="/work/codecov" class="btn btn--big">
+			Back to Codecov Article
+		</a>
+	</div>
+</div>
+
+<script src="/../www/js/work/jquery-2.2.4.min.js"></script>
+  <script src="/../www/js/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+		$('.slickin-slide').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  centerMode: true,
+		  variableWidth: true
+		});
+    });
+</script>
+
+<div class="image-modal js-image-modal">
+  <img class="image-modal__img js-image-modal__img" />
+</div>
+
+<%- partial('../_inc/layout/footer') %>
